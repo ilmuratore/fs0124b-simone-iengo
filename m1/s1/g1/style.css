@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,400;1,600;1,700&display=swap');
+
+table{
+    width: 43%;
+}
+td{
+    border: 2px solid rgb(73, 24, 24);
+    text-align: center;
+}
+
+
+
+body{
+    background-color: rgb(196, 212, 212);
+}
+
+
+a:link {
+  color: red;
+}
+
+
+a:visited {
+  color: green;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}

@@ -1,15 +1,9 @@
-
-
-
-
 body {
-      text-align: center;
+  text-align: center;
   margin: 0;
   color: #333;
   font-family: sans-serif;
 }
-
-
 
 #logo {
   width: 200px;
@@ -19,6 +13,10 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 100;
 }
 
 .content {
@@ -34,7 +32,6 @@ h1 {
 }
 
 
-
 #featured {
   border-left: 1px solid #ffd977;
   padding-left: 1rem;
@@ -46,7 +43,7 @@ h1 {
   display: block;
 }
 
-#featured a,
+
 #link {
   color: rgb(10, 53, 53);
 }
@@ -60,9 +57,6 @@ ol li p:first-of-type {
   font-weight: bold;
 }
 
-h2 {
-  font-weight: 100;
-}
 
 .titolo-sezione {
   border-bottom: 1px solid rgb(26, 104, 104);
@@ -78,7 +72,7 @@ li {
 }
 
 nav {
-  background-color: white;
+  background-color: rgb(233, 194, 121);
   padding: 1rem 0;
   border-top: 1px solid #ad8d3d;
   color: #22a7a7;

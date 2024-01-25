@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
-
-/* modfica generale per non avere problemi di gestione del padding, piccolo trucco */
-
+/* IMPOSTAZIONI GENERALI */
 *{
-    box-sizing: border-box;
+    font-family: 'Poppins'; sans-serif;
 }
 
+
+
+.body{
+    background-image: url(../assets/img/sfondo.png);
+    
+}
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */

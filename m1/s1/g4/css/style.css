@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /* IMPOSTAZIONI GENERALI */
-*{
-    font-family: 'Poppins'; sans-serif;
-}
 
-
-
-.body{
+#background{
     background-image: url(../assets/img/sfondo.png);
-    
+    height: 500px;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+   
+    background-color: #000;
 }
 /* HEADER */
-
+#header, a {
+        padding: 25px;
+        background-color: #3b7f9e;
+        font-family: 'Poppins';
+        color: white;
+}
+#logo{
+    image
+}
+#menu{}
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */

@@ -3,25 +3,35 @@
 /* IMPOSTAZIONI GENERALI */
 
 #background{
+    padding: 20px;
     background-image: url(../assets/img/sfondo.png);
-    height: 500px;
+    min-height: 500px;
+    min-width: 0;
     background-size: contain;
     background-repeat: repeat;
+    background-size: 80%;
     background-position: center;
-   
     background-color: #000;
 }
 /* HEADER */
-#header, a {
-        padding: 25px;
+#header{
+        max-height: 200px;
+        padding: 15px;
         background-color: #3b7f9e;
         font-family: 'Poppins';
         color: white;
+        text-align: center;
 }
-#logo{
-    image
+#logo{}
+#menu{
+    font-family: 'Poppins';
+    text-align: center;
+    color: white
 }
-#menu{}
+a{
+    color: white;
+    
+}
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */

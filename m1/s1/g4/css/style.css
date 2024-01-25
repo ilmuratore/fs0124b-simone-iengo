@@ -21,8 +21,9 @@
         font-family: 'Poppins';
         color: white;
         text-align: center;
+        font-weight: 600;
 }
-#logo{}
+
 #menu{
     font-family: 'Poppins';
     text-align: center;
@@ -33,9 +34,17 @@ a{
     
 }
 /* MAIN */
-
+main{
+    padding: 15px;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 400;
+}
 /* ELEMENTI NEL MAIN - ARTICLE */
-
+#articolo1{
+    font-weight: bold;
+}
 /* TABELLE */
 
 /* FORM */

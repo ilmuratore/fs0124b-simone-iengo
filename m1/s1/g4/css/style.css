@@ -2,23 +2,17 @@
 
 /* IMPOSTAZIONI GENERALI */
 
-#background{
+body{
     padding: 20px;
     background-image: url(../assets/img/sfondo.png);
-    min-height: 500px;
+    max-height: 500px;
     min-width: 0;
-    background-size: contain;
-    background-repeat: repeat;
-    background-size: 80%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-color: #000;
+    background-size: contain;
+    
 }
 
-p{
-    display: inline;
-    word-spacing: 2px;
-
-}
 /* HEADER */
 #header{
         max-height: 200px;

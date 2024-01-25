@@ -13,6 +13,12 @@
     background-position: center;
     background-color: #000;
 }
+
+p{
+    display: inline;
+    word-spacing: 2px;
+
+}
 /* HEADER */
 #header{
         max-height: 200px;
@@ -35,16 +41,24 @@ a{
 }
 /* MAIN */
 main{
+    word-spacing: 2px;
+    background-color: white ;
     padding: 15px;
     font-family: 'Poppins', sans-serif; 
-    font-size: 1.2em;
     text-align: left;
-    font-weight: 400;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 #articolo1{
     font-weight: bold;
 }
+
+.sottotitoli{
+    font-family: 'Poppins';
+    font-weight: 100;
+
+}
+
+
 /* TABELLE */
 
 /* FORM */

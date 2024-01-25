@@ -1,0 +1,9 @@
+
+
+
+/* modfica generale per non avere problemi di gestione del padding, piccolo trucco */
+
+*{
+    box-sizing: border-box;
+}
+

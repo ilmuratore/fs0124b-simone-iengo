@@ -1,3 +1,6 @@
+/* css rules for desktop version of the same html
+    i use some code from the mobile version */
+
 /* General Rules */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -10,8 +13,8 @@ body{
     font-size: 1.2rem;
     font-family: 'Open Sans';
     line-height: 1.6rem;
-    text-align: center;
-    min-width: 450px;
+   
+    min-width: 1366px;
     margin: 0 ;
     
 }
@@ -21,7 +24,7 @@ body{
 
 header{
     background-color: black;
-    
+    text-align: center;
 }
 
 #logo{
@@ -38,6 +41,7 @@ main{
 }
 
 #banner{
+    text-align: center;
     background-image: url(../assets/img/banner.jpg);
     background-position: center;
     background-size: cover;
@@ -67,9 +71,14 @@ h1, h2{
 }
 
 #notebook{
+    position: left-fixed;
     border-radius: 50%;
     width: 300px;
     height: auto;
+}
+
+.articles_elements{
+    display: inline;
 }
 
 /* Aside Rules */
@@ -81,7 +90,8 @@ h1, h2{
 }
 
 
-.asides{
+
+.box{
     border: 1px solid #dbdbda;
     border-radius: 10px;
     margin-top: 50px;
@@ -92,12 +102,12 @@ h1, h2{
     
 }
 
-.asides p{
+.box p{
     padding-inline-start: 5px;
     padding-inline-end: 5px;
 }
 
-.asides_img{
+.box_img{
     max-width: 100%;
     height: auto;
     border-top-right-radius: 10px;

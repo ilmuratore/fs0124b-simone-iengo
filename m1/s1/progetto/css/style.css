@@ -78,6 +78,7 @@ h1, h2{
     background-color: #e22d0e;
     color: white;
     padding: 10px;
+    margin: auto;
 }
 
 
@@ -91,6 +92,23 @@ h1, h2{
     box-shadow: #393d41;
     
 }
+
+
+.box {
+    height: 300px;
+    width: 3000px;
+    margin: 15px;
+    
+    border: 1px solid #dbdbda;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
 
 .asides p{
     padding-inline-start: 5px;

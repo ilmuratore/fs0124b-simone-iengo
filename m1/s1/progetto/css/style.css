@@ -82,40 +82,24 @@ h1, h2{
 }
 
 
-.asides{
+.box{
     border: 1px solid #dbdbda;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
-    box-shadow: #393d41;
+    
     
 }
 
 
-.box {
-    height: 300px;
-    width: 3000px;
-    margin: 15px;
-    
-    border: 1px solid #dbdbda;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-
-
-
-
-
-.asides p{
+.box p{
     padding-inline-start: 5px;
     padding-inline-end: 5px;
 }
 
-.asides_img{
+.box_img{
     max-width: 100%;
     height: auto;
     border-top-right-radius: 10px;

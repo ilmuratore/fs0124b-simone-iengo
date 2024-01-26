@@ -1,1 +1,60 @@
-/* Your styles here */
+/* General Rules */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+/* Body Rules */
+
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    line-height: 1.6rem;
+    text-align: center;
+    max-width: 500px;
+}
+
+/* Header Rules */
+
+header{
+    background-color: black;
+    
+}
+
+/* Main  Rules */
+
+#banner{
+    background-image: url(../assets/img/banner.jpg);
+    background-position: center;
+
+}
+
+#partiamo{
+    background-color: #f04c2f;
+    color: white;
+    font-family: "Monteserrat";
+    font-weight: bold;
+}
+
+
+
+h1, h2{
+    color: #25a2c3;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+{
+
+}
+/* Aside Rules */
+
+#ceo{
+    background-color: #e22d0e;
+    color: white;
+}
+
+
+
+/* Footer Rules */ 

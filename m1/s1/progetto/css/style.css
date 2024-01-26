@@ -17,6 +17,9 @@ body{
 
 p{
     font-family: 'Open Sans';
+    font-size: 'Open Sans';
+    line-height: 1.6rem;
+    
 }
 
 /* Header Rules */
@@ -42,14 +45,11 @@ header{
     padding-bottom: 10px;
 }
 
-#partiamo{
+#button{
     background-color: #f04c2f;
-    border-radius: 5px;
-    
     color: white;
     font-family: "Monteserrat";
     font-weight: bold;
-    text-decoration: none;
 }
 
 h1, h2{

@@ -125,9 +125,12 @@ footer{
 }
 
 .address{
+    display: block;
     color: white;
 }
-
+i{
+    display: inline-block;
+}
 hr{
    color: white;
    size: 1;

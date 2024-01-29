@@ -11,32 +11,40 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* Javascript e' un linguaggio di programmazione. Permette di far interagire i dati in diversi modi e in diverse forme. 
+Il linguaggio prevede diverse tipologie di inserimento dei dati chiamati datatype. L'uitlizzo dei diversi datatype permette la creazione di strutture logiche che e' possibile eseguire nel browser avendo un determinato output.
+I datatype nello specifico sono (scritti come segue)
+*/
+let stringa = "Parola" //valore di tipo alfanumerico
+let numero = 5; //valore esclusivamente numericp
+let booleano = true;//(false) // valore che si traduce in una logica booleana, quindi il risultato sara' sempre true o false (vero o falso)
+
 
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+ let myName ='Simone'; 
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+ console.log(12 +20); 
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+ let x = 12; 
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* myName = 'Iengo' */ 
+/* commenta */
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).

@@ -16,7 +16,7 @@ Il linguaggio prevede diverse tipologie di inserimento dei dati chiamati datatyp
 I datatype nello specifico sono (scritti come segue)
 */
 let stringa = "Parola" //valore di tipo alfanumerico
-let numero = 5; //valore esclusivamente numericp
+let numero = 5; //valore esclusivamente numerici
 let booleano = true;//(false) // valore che si traduce in una logica booleana, quindi il risultato sara' sempre true o false (vero o falso)
 
 
@@ -43,14 +43,29 @@ let booleano = true;//(false) // valore che si traduce in una logica booleana, q
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/* myName = 'Iengo' */ 
-/* commenta */
+myName = 'Iengo'; 
+/* dimostrazione dell'impossibilita' di riassegnare valore ad una variabile costante */
+
+/*
+let idVar = 'Pippo' // inizio con l'inserimento di una variabile con let dandogli un valore alfanumerico
+console.log(idVar) // con la funzione di console.log verifico la sua corretta compilazione nel browser con il valore assegnato in radice
+idVar = 'Mouse' // ora applico una riassegnazione della variabile 
+console.log(idVar) // dando di nuovo console.log vedro' la modifica del valore assegnato a quella variabile 
+
+const idConst = 'Paolo' // con la keyword const, io applico una variabile constante, cioe' che la sua funzione resta immutata ed e' settata per essere tale .
+console.log(idConst) // e' verificabile con la console la sua 
+//se provo a riassegnare la variabile 
+idConst = 'Giuffrida'
+console.log(idConst) // il risultato sara' un errore in quanto ho provato a modificare la constante di una variabile "Assignment to constant variable."
+
+
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let sottrazione = ( 4 - x)
+console.log(sottrazione)
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -58,4 +73,10 @@ let booleano = true;//(false) // valore che si traduce in una logica booleana, q
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let name1 = 'john'
+let name2 = 'John'
+console.log('name1 e name2 sono uguali:', name1 == name2)
+
+console.log('name1 e name2 sono uguali in lowecase',
+name1.toLowerCase() == name2.toLowerCase()
+)

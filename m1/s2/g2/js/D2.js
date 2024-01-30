@@ -108,8 +108,7 @@ console.log(typeof data)
 
 
 const numero = 127
-if(numero % 2){console.log('Numero dispari');}
-else{console.log("numero pari");}
+if(numero % 2 === 0){console.log('Numero pari');}else{console.log("Numero dispari");}
 
 
 

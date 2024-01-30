@@ -12,27 +12,39 @@
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-
- { 
-   const val = 5 
-if(val != 5){(console.log('not equal')}
-else{(console.log('true'))}
+/*
+{
+  const number = [1,2,3,4,5,6,7,8,9]
+if(number != 5){console.log("not equal")}
+else{console.log('false')}
 }
-
-
 */
+
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+/*
+{
+let number = 15
+console.log(number)
+let divisibile = (number % 5 )
+console.log('e divisibile per 5 con riporto di '+ divisibile)
+if(divisibile == 0){console.log("il numero e' divisibile per interi di 5")}
+else{console.log("il numero non e' divisibile per interi di 5")}
+}
+*/
+
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+const number = [4,8,12,16,20,]
+if(number == 8){console.log('true')}
+ */
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -40,20 +52,40 @@ else{(console.log('true'))}
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+let totalShoppingCart = 50
+console.log(totalShoppingCart)
+if(totalShoppingCart >= 50){console.log(totalShoppingCart + ' con spedizione gratuita')}
+else{console.log(totalShoppingCart + ' + 10 di spese di spedizione')}
+*/
+
+
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+const blackFriday = true
+let totalShoppingCart = 50
+console.log(totalShoppingCart)
+if(totalShoppingCart >= 50){console.log(totalShoppingCart + ' con spedizione gratuita')}
+else{console.log(totalShoppingCart + ' + 10 di spese di spedizione')}
+*/
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+{
+let a = 'Giuseppe'
+let b = 'Antonio'
+let c = 'Ciro'
+
+
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 

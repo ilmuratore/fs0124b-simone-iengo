@@ -73,7 +73,7 @@ totalShoppingCart = totalShoppingCart *0.8
 console.log(totalShoppingCart)
 if(totalShoppingCart >= 50){console.log(totalShoppingCart + 0)}
 else{console.log(totalShoppingCart + 10 )}
-let totale = 
+
 
 
 /* ESERCIZIO 7

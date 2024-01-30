@@ -92,8 +92,10 @@ h1, h2{
     padding: 10px;
 }
 
-
-
+.container{
+    display: flexbox;
+    
+}
 .box{
     border: 1px solid #dbdbda;
     border-radius: 10px;

@@ -52,7 +52,7 @@ if(number3 == 8){console.log('true')}
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-
+/*
 let totalShoppingCart = 50
 console.log(totalShoppingCart)
 if(totalShoppingCart >= 50){console.log(totalShoppingCart + ' con spedizione gratuita')}
@@ -66,12 +66,14 @@ else{console.log(totalShoppingCart + ' + 10 di spese di spedizione')}
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/*
+
 const blackFriday = true
 let totalShoppingCart = 50
+totalShoppingCart = totalShoppingCart *0.8
 console.log(totalShoppingCart)
-if(totalShoppingCart >= 50){console.log(totalShoppingCart + ' con spedizione gratuita')}
-else{console.log(totalShoppingCart + ' + 10 di spese di spedizione')}
+if(totalShoppingCart >= 50){console.log(totalShoppingCart + 0)}
+else{console.log(totalShoppingCart + 10 )}
+let totale = 
 
 
 /* ESERCIZIO 7

@@ -15,8 +15,12 @@ console.log(areaRettangolo())
  la loro somma moltiplicata per tre.
 */
 
-function crazySum(a,b){
-   return 6 + 8  
+function crazySum(a = 5 ,b = 5){
+  if(a === b){return a*3} 
+  else{return a+b}
+
+  
+  
 }
 
 console.log(crazySum())

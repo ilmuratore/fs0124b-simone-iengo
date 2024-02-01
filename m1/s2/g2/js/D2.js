@@ -2,7 +2,10 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-
+{
+  let numeri = [1, 5, 18, 3, 9, 15, 69]
+  console.log(Math.max(...numeri))
+       }
 
 
 
@@ -10,12 +13,26 @@
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
+{
+  const number = [1,2,3,4,5,6,7,8,9]
+if(number != 5){console.log("not equal")}
+else{console.log('false')}
+}
+
+
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-
+{
+  let numero = 15
+  console.log(numero)
+  let divisibile = (numero % 5 )
+  console.log('e divisibile per 5 con riporto di '+ divisibile)
+  if(divisibile == 0){console.log("il numero e' divisibile per interi di 5")}
+  else{console.log("il numero non e' divisibile per interi di 5")}
+  }
 
 
 
@@ -23,6 +40,11 @@
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+
+
+const number3 = [4,8,12,16,20,]
+if(number3 == 8){console.log('true')}
+
 
 
 
@@ -33,7 +55,12 @@
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-
+/*
+let totalShoppingCart = 50
+console.log(totalShoppingCart)
+if(totalShoppingCart >= 50){console.log(totalShoppingCart + ' con spedizione gratuita')}
+else{console.log(totalShoppingCart + ' + 10 di spese di spedizione')}
+*/
 
 
 
@@ -42,7 +69,12 @@
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-
+const blackFriday = true
+let totalShoppingCart = 50
+totalShoppingCart = totalShoppingCart *0.8
+console.log(totalShoppingCart)
+if(totalShoppingCart >= 50){console.log(totalShoppingCart + 0)}
+else{console.log(totalShoppingCart + 10 )}
 
 
 
@@ -52,13 +84,22 @@
   Alla fine mostra il risultato in console.
 */
 
-
+{
+  const name = [36,15,27,]
+  name.sort()
+  console.log(name)
+  }
 
 
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
+
+let data = false
+data = 5
+console.log(typeof data)
+
 
 
 
@@ -67,14 +108,22 @@
 */
 
 
-
-
+const numero = 127
+if(numero % 2 === 0){console.log('Numero pari');}else{console.log("Numero dispari");}
 
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
   
-  
+  let val = 7
+  if (val < 5) {
+    console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
+
 
 
 
@@ -82,6 +131,13 @@
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
+const me = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+me.city = 'Toronto'
+console.log(me)
 
 
 
@@ -91,7 +147,8 @@
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-
+delete me.lastName
+console.log(me)
 
 
 
@@ -99,15 +156,21 @@
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
+delete me.skills[2]
+console.log(me);
+
 
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
+tabella = new Array(1,2,3,4,5,6,7,8,9,10)
+console.log(tabella)
 
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
+tabella.splice(10, 0, 100)

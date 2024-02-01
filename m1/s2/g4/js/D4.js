@@ -50,8 +50,6 @@ console.log(boundary(400))
  ritornare la stringa originale senza alterarla.
 */
 let stringa = 'Epicode e la squola che fa per te, provare per credere'
-
-
 function epify(epicode){
 
 }
@@ -94,4 +92,10 @@ function reverseString(){}
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n){
+  let array = []
+  for(let i = 0; i<n; i++){
+    array.push(Math.floor(Math.random()* 11))
+  }
+}
+console.log(giveMeRandom(10))

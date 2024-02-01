@@ -49,8 +49,12 @@ console.log(boundary(400))
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
+let stringa = 'Epicode e la squola che fa per te, provare per credere'
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+function epify(epicode){
+
+}
 
 
 /* ESERCIZIO 6

@@ -16,7 +16,7 @@ console.log(areaRettangolo(7,6))
 */
 
 function crazySum(a,b){
-  if(a === b){return a+b*3} 
+  if(a === b){return (a+b)*3} 
   else{return a+b}
 
 }
@@ -28,8 +28,8 @@ console.log(crazySum(5,2))
 */
 
 function crazyDiff(a, b=19){
-if(a > 19){return (a-b)*3}
-else{return a-b}
+if(a > 19){return Math.abs(a-b)*3}
+else{return Math.abs(a-b)}
 }
 
 console.log(crazyDiff(25))
@@ -39,30 +39,35 @@ console.log(crazyDiff(25))
 */
 
 function boundary(n){
- if(n >20 && n <=100 || n===400){return true}
+ if((n >20 && n <=100) || n===400){return true}
  else{return false}
 }
-
 console.log(boundary(400))
+
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-let stringa = 'Epicode e la squola che fa per te, provare per credere'
-function epify(epicode){
 
-}
+function epify(stringa){
+  
+    if(!stringa.startsWith('Epicode')){
+      return 'Epicode' + stringa
+    }
+    return stringa
+  }
 
+console.log(epify('Epicode e la squola che fa per te, provare per credere! '))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-function check3and7(l){
-  if(l % 3 ){return true}
-  else if(l % 7){return true}
+function check3and7(n){
+  if(n% 3 ){return true}
+  else if(l % n){return true}
   else{return false}
 }
 
@@ -110,4 +115,4 @@ function giveMeRandom(n){
     array.push(Math.floor(Math.random()* 11))
   }
 }
-console.log(giveMeRandom(10))
+console.log(giveMeRandom(15))

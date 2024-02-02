@@ -1,0 +1,46 @@
+/* style shit */
+/* colore header sfondo amazon #283241
+    colore menu sfondo #394857
+    colore sfondo primo gift  #f36900
+    colore sfondo main #e7ebec
+    colore testo link negli articoli #235d72
+    colore sfondo articoli orizzontali #fefefe
+
+footer primo colore sfondo #394859
+footer secondo colore sfondo #283241
+
+/* BODY */ 
+
+/* HEADER */
+#testa{
+    background-color:#283241 ;
+}
+.menu{
+    background-color:#394857 ;
+    
+}
+.a_menu{
+    color: white
+}
+
+/* MAIN */
+#banner{
+    background-color:#f36900 ;
+}
+
+#holidaygift{
+    background-image: url(../assets/images/bg-image.png);
+    text-align: center;
+    color: white;
+
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+/* ASIDE */
+
+/* FOOTER */ 
+

@@ -10,6 +10,7 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
+
 const pets = ['dog', 'cat', 'hamster', 'redfish']
 
   for(let i=0; i < pets.length; i++){
@@ -20,6 +21,7 @@ const pets = ['dog', 'cat', 'hamster', 'redfish']
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 
+
     for(let i=0; i < pets.length; i++){
       pets.sort();
     }
@@ -29,16 +31,18 @@ const pets = ['dog', 'cat', 'hamster', 'redfish']
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
+  
     for(let i=0; i< pets.length; i++){
      pets.reverse();
     }
     console.log(pets.reverse())
-  
+
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
 
+  
   let temp;
       temp = pets.shift();
       pets.push(temp);
@@ -68,13 +72,14 @@ const cars = [
     trims: ['life', 'style', 'r-line'],
   },
 ]
-
-for(let i=0; i < cars.length; i++){}
-    
+cars[i].push('licenseplate')
+console.log(cars)
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+
+
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -85,6 +90,14 @@ const justTrims = []
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+
+/* for(let i=0; i < cars.length; i++){
+  if(color.IndexOf[0] === 'b'){
+    console.log('Fizz')
+  }
+  else{ console.log('Buzz')};
+  console.log()
+  } */
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.

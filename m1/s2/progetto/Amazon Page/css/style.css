@@ -12,15 +12,30 @@ footer secondo colore sfondo #283241
 /* BODY */ 
 
 /* HEADER */
+#logo_top{
+    width: 150px;
+}
 #testa{
     background-color:#283241 ;
+    background-size: auto;
 }
 .menu{
     background-color:#394857 ;
     
 }
+ul{
+    display: flex;
+    flex-direction: row;
+   
+}
+
 .a_menu{
-    color: white
+    color: white;
+    flex-direction: row ;
+    marker: none;
+    border-left: 5px;
+
+    
 }
 
 /* MAIN */
@@ -28,10 +43,15 @@ footer secondo colore sfondo #283241
     background-color:#f36900 ;
 }
 
+h1{
+    font-weight: bold;
+    font-family: Arial ;
+}
 #holidaygift{
     background-image: url(../assets/images/bg-image.png);
     text-align: center;
     color: white;
+    background-size: auto;
 
 }
 
@@ -40,7 +60,17 @@ footer secondo colore sfondo #283241
     flex-direction: row;
     justify-content: space-between ;
 }
+
+.item_small{
+    max-width: 100%;
+    
+}
 /* ASIDE */
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
 
 /* FOOTER */ 
 

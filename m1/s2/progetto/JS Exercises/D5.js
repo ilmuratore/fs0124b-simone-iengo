@@ -35,7 +35,7 @@ const pets = ['dog', 'cat', 'hamster', 'redfish']
     for(let i=0; i< pets.length; i++){
      pets.reverse();
     }
-    console.log(pets.reverse())
+    console.log(pets)
 
 
 /* ESERCIZIO 4
@@ -72,39 +72,52 @@ const cars = [
     trims: ['life', 'style', 'r-line'],
   },
 ]
-cars[i].push('licenseplate')
-console.log(cars)
+
+    for (let i = 0; i < cars.length; i++){
+      cars[i].licensePlate = "smadonno" + Math.floor(Math.random() * i)
+    }
+  console.log(cars) 
+    
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
-
+cars.push({
+  brand: 'Alfa Romeo',
+  model: 'Giulietta',
+  color: 'White',
+  trims: ['distinctive', 'Sport'],
+}
+)
+for(let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();}
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
+const justTrims = cars.map(car => car.trims[0]); 
+
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
-/* for(let i=0; i < cars.length; i++){
-  if(color.IndexOf[0] === 'b'){
-    console.log('Fizz')
-  }
+for(let i=0; i < cars.length; i++){
+  if(cars[i].color.charAt(0) === 'b')
+  {console.log('Fizz')} 
   else{ console.log('Buzz')};
-  console.log()
-  } */
+  } 
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
-const numericArray = [
-  6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
-]
+const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,]
+let i = numericArray
+while(numericArray[i] == 32) {console.log(numericArray[i]); i++;}
+
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -112,3 +125,32 @@ const numericArray = [
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
+let posizioni = []
+for(let i = 0; i < charactersArray.length; i++) {
+  switch(charactersArray[i]) {
+    case 'a': posizioni.push(1); break;
+    case 'b': posizioni.push(2); break;
+    case 'c': posizioni.push(3); break;
+    case 'd': posizioni.push(4); break;
+    case 'e': posizioni.push(5); break;
+    case 'f': posizioni.push(6); break;
+    case 'g': posizioni.push(7); break;
+    case 'h': posizioni.push(8); break;
+    case 'i': posizioni.push(9); break;
+    case 'l': posizioni.push(10); break;
+    case 'm': posizioni.push(11); break;
+    case 'n': posizioni.push(12); break;
+    case 'o': posizioni.push(13); break;
+    case 'p': posizioni.push(14); break;
+    case 'q': posizioni.push(15); break;
+    case 'r': posizioni.push(16); break;
+    case 's': posizioni.push(17); break;
+    case 't': posizioni.push(18); break;
+    case 'u': posizioni.push(19); break;
+    case 'v': posizioni.push(20); break;
+    case 'z': posizioni.push(21); break;
+    default: posizioni.push(0); 
+}
+}
+console.log(posizioni);  
+

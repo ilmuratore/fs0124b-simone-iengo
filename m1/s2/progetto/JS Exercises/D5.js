@@ -23,9 +23,8 @@ const pets = ['dog', 'cat', 'hamster', 'redfish']
 
 
     for(let i=0; i < pets.length; i++){
-      pets.sort();
+    console.log(pets.sort())
     }
-  console.log(pets)
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
@@ -33,9 +32,10 @@ const pets = ['dog', 'cat', 'hamster', 'redfish']
 
   
     for(let i=0; i< pets.length; i++){
-     pets.reverse();
+      console.log(pets.reverse())
     }
-    console.log(pets)
+    
+  
 
 
 /* ESERCIZIO 4
@@ -97,7 +97,16 @@ console.log(cars)
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = cars.map(car => car.trims[0]); 
+
+ 
+  const justTrims = [];
+
+  for (let i = 0; i < cars.length; i++) {
+    justTrims.push(cars[i].trims[0]);
+  }
+
+  console.log(justTrims);
+
 
 
 /* ESERCIZIO 8
@@ -116,7 +125,7 @@ for(let i=0; i < cars.length; i++){
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,]
 let i = numericArray
-while(numericArray[i] == 32) {console.log(numericArray[i]); i++;}
+while(numericArray[i] === 32) {console.log(numericArray[i]); i++;}
 
 
 /* ESERCIZIO 10

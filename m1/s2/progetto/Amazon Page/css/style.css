@@ -17,7 +17,7 @@ footer secondo colore sfondo #283241
 }
 #testa{
     background-color:#283241 ;
-    background-size: auto;
+   
 }
 .menu{
     background-color:#394857 ;
@@ -26,13 +26,14 @@ footer secondo colore sfondo #283241
 ul{
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
    
 }
 
 .a_menu{
     color: white;
     flex-direction: row ;
-    marker: none;
     border-left: 5px;
 
     
@@ -40,7 +41,9 @@ ul{
 
 /* MAIN */
 #banner{
+    display: flex;
     background-color:#f36900 ;
+    justify-content: center;
 }
 
 h1{
@@ -51,20 +54,29 @@ h1{
     background-image: url(../assets/images/bg-image.png);
     text-align: center;
     color: white;
-    background-size: auto;
+    background-size: 100% 100%;
 
 }
 
-.article{
+div.article{
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
-}
-
-.item_small{
-    max-width: 100%;
+   
     
 }
+.item{
+    display: inline
+    m
+
+}
+.item_small{
+    height: fit-content;
+    border-radius: 5px;
+    size-adjust: 100%;
+    
+}
+
+
 /* ASIDE */
 
 aside{
@@ -72,5 +84,23 @@ aside{
     flex-direction: column;
 }
 
+.img_itemsbig{
+    max-width: 150px;
+}
 /* FOOTER */ 
 
+footer{
+    background-color: #283241;
+}
+
+#footer{
+    background-color: #394859;
+    text-align: center;
+}
+
+#logo_footer{
+    
+    background-size: cover;
+    align-items: center;
+    width: 250px;
+}

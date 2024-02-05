@@ -84,56 +84,122 @@
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
 
-      const changeTitle = function () {}
+    const changeTitle = function (newTitle) {
+    let titles = document.querySelectorAll('h1'); 
+    titles.forEach((title) => {
+        title.textContent = newTitle;
+    });
+}
+      changeTitle('Hakuna Matata ragazzi!')
 
       /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
 
-      const addClassToTitle = function () {}
+      const addClassToTitle = function (addClass) {
+        let titles = document.querySelectorAll('h1');
+        titles.forEach((title) => {
+          title.classList.add('myHeading');
+        });
+      }
+      addClassToTitle();
 
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
       */
 
-      const changePcontent = function () {}
+      const changePcontent = function (newText) {
+        let divs = document.querySelectorAll('div');
+        divs.forEach((div) => {
+          let pElements = div.querySelectorAll('p');
+          pElements.forEach((p) => {
+            p.textContent = newText;
+          });
+        });
+      }
+      changePcontent('CiccioGamer89')
 
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-      const changeUrls = function () {}
+      const changeUrls = function (searchLink) {
+        let links = document.querySelectorAll('a:not(footer a)');
+        links.forEach((link) => {
+          link.href = 'https:www.google.com' ;
+        });
+      }
+      changeUrls()
 
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {}
-
+      const addToTheSecond = function (addElement) {
+        let element = document.getElementById('secondList');
+        if(secondList){
+          let newItem = document.createElement('li');
+          newItem.textContent = addElement;
+          secondList.appendChild(newItem);
+        }
+      }
+addToTheSecond('quarto elemento')
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
 
-      const addParagraph = function () {}
+      const addParagraph = function (newParagraph) {
+        let nuovoParagrafo = document.createElement('p');
+        nuovoParagrafo.textContent = newParagraph;
+        let firstDiv = document.querySelector('div');
+        if(firstDiv){
+          firstDiv.append(newParagraph);
+        }
+      }
+addParagraph('sono una persona molto stupida in quanto ho perso circa 35 minuti del mio tempo prezioso a capire il perche della mia sofferenza e del fatto che sta funzione, che ha di per se qualcosa di divino dopo le mie imprecazioni verso santi del sud-est Asiatico, non funzionasse, tra errori di vario genere e qualche mio neurone spiaccicato sul muro a seguito di trauma cranico. Aiutatemi. ')
 
       /* ESERCIZIO 7
-       Scrivi una funzione che faccia scomparire la prima lista non ordinata
+       Scrivi una funzione che faccia scomparire la prima lista non ordinata con id='firstList'
     */
 
-      const hideFirstUl = function () {}
+      const hideFirstUl = function (alakazam) {
+       let primaLista = document.getElementById('firstList');
+        if (primaLista) {
+        primaLista.style.display = 'none';
+        } 
+    }
+
+hideFirstUl()
 
       /* ESERCIZIO 8 
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
       */
 
-      const paintItGreen = function () {}
-
+      const paintItGreen = function () {
+        let unorderedLists = document.querySelectorAll('ul');
+        if(unorderedLists){
+          unorderedLists.forEach(function(verde){
+            verde.style.backgroundColor = 'green';
+          })
+        }
+      }
+paintItGreen()
       /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
-      const makeItClickable = function () {}
-
+      const makeItClickable = function (cliccami) {
+        let h1 = document.querySelector('h1');
+        if(h1){
+          h1.addEventListener('click', function(premuto){
+            let text = h1.textContent;
+            if(text.length > 0){
+              h1.textContent = text.slice(0, -1);
+            }
+          })
+        }
+      }
+makeItClickable()
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */

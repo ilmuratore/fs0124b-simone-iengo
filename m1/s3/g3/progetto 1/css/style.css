@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+/* sfondo app*/
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(83deg, #ff0063 ,#091179);
+    padding: 10px;
+
+}
+/* bordo app */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 10px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+/* titolo e logo */
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+/* */ 

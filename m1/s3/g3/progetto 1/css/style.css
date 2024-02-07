@@ -11,11 +11,11 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(83deg, #ff0063 ,#091179);
+    background: linear-gradient(110deg, #10198f , #e1525e);
     padding: 10px;
 
 }
-/* bordo app */
+/* box app dove e' contenuto */
 .todo-app{
     width: 100%;
     max-width: 540px;
@@ -26,7 +26,7 @@
 }
 /* titolo e logo */
 .todo-app h2{
-    color: #002765;
+    color: #052977;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -36,5 +36,88 @@
     width: 50px;
     margin-left: 10px;
 }
+/* grafica del box input */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
 
-/* */ 
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #e1525e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* grafica dei promemoria */ 
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 8px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../assets/img/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+/* promemoria grafica quando completati */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through 2px;    
+}
+
+ul li.checked::before{
+    background-image: url(../assets/img/checked.png);
+}
+
+
+/* gestione grafica delle x per eliminare i task (span in li) */ 
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 0px;
+    font-size: 45px;
+    color: #555;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+    /* non va quando ci passi sopra con il mouse....porco il demonio CSS ti odio a morteeeeeeee */
+    /* ti odio odio odio cercare reference */ 
+
+/* non funziona ... volevo fa na cosa carina ....
+    ul li span:hover{
+        background-color: #818080;
+    }

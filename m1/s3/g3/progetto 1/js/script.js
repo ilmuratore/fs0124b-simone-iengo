@@ -7,17 +7,17 @@ const listContainer = document.getElementById("list-container");
 // logica di aggiunta elementi nella lista li dei promemoria //
 function addTask(){
     if(inputBox.value === ''){
-        alert("Davvero non hai nulla da fare?")
+        alert("Davvero non hai nulla da fare?") // alert ok 
     }
     else{
-        let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
-        listContainer.appendChild(li);
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+        let li = document.createElement("li"); //creazione elemento li in html ok 
+        li.innerHTML = inputBox.value; 
+        listContainer.appendChild(li); // inserimento in ul ok 
+        let span = document.createElement("span"); // inserimento span ok 
+        span.innerHTML = "\u00d7"; // x come "elemento grafico " ok
+        li.appendChild(span); // pure questo funziona
     }
-    inputBox.value = "";
+    inputBox.value = ""; // corretto 
 }
 
 //logica di modifica degli elementi nella lista 

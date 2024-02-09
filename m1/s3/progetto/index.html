@@ -29,30 +29,6 @@
 
 
     <script src="./js/D10.js"></script>
-    <script >
-        let canvas = document.getElementById('myCanvas');
-        let ctx = canvas.getContext('2d');
-    
-    
-        let img = new Image();
-    img.src = 'https://th.bing.com/th/id/OIP.RtKGd9zBVvMmnAzcQw7GLAHaEK?rs=1&pid=ImgDetMain';
-    img.onload = function() {
-    
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    
-        let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        let data = imageData.data;
-    
-        for (var i = 0; i < data.length; i += 4) {
-            let red = data[i];
-            let green = data[i + 1];
-            let blue = data[i + 2];
-            let alpha = data[i + 3];
-    
-            console.log('Pixel ' + (i / 4) + ': Red ' + red + ', Green ' + green + ', Blue ' + blue + ', Alpha ' + alpha);
-    
-        }
-    };
-    </script>
+
 </body>
 </html>

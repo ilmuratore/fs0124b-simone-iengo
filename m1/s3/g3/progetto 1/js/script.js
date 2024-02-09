@@ -16,7 +16,7 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = ""; 
-}
+;}
 
 listContainer.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){
@@ -25,4 +25,6 @@ listContainer.addEventListener('click', function(e){
     else if(e.target.tagName === 'SPAN'){
         e.target.parentElement.remove();
     }
-}, false)
+}, false);
+
+ 

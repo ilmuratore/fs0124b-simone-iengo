@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "taskLabel": "attivit\u00E0-progetto 2",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ],
+  "version": "0.2.1"
+}

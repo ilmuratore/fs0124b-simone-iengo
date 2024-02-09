@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Week , Javascript II | Simone Iengo</title>
+
+</head>
+<body>
+    <h1>Aprire console log per verificare gli esercizi</h1>
+    
+    <!-- elementi per verificare la corretta selezione e manipolazione del dom da parte del js collegato -->
+    <div id="container"></div>
+    <td>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </td>
+    <td></td>
+
+    <a href="#">Clicca qui</a>
+
+    <ul id="myList">
+        <li></li>
+        <li></li>
+    </ul>
+
+
+
+
+    <script src="./js/D10.js"></script>
+    <script >
+        let canvas = document.getElementById('myCanvas');
+        let ctx = canvas.getContext('2d');
+    
+    
+        let img = new Image();
+    img.src = 'https://th.bing.com/th/id/OIP.RtKGd9zBVvMmnAzcQw7GLAHaEK?rs=1&pid=ImgDetMain';
+    img.onload = function() {
+    
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    
+        let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        let data = imageData.data;
+    
+        for (var i = 0; i < data.length; i += 4) {
+            let red = data[i];
+            let green = data[i + 1];
+            let blue = data[i + 2];
+            let alpha = data[i + 3];
+    
+            console.log('Pixel ' + (i / 4) + ': Red ' + red + ', Green ' + green + ', Blue ' + blue + ', Alpha ' + alpha);
+    
+        }
+    };
+    </script>
+</body>
+</html>

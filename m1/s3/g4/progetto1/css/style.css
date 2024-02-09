@@ -1,0 +1,95 @@
+
+*{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: 10px;
+}
+
+
+.container{
+  background: linear-gradient(135deg, #42229b, #5f126e);
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+
+/* grafica tabellone del master */ 
+
+.main {
+  width: 100%;
+  max-width: 750px;
+  background: #fff;
+  margin: 10px auto 10px;
+  padding: 40px 30px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.board {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* grafica user board */
+
+.user-board {
+  width: 100%;
+  max-width: 350px;
+  margin: 10px auto 10px;
+  padding: 40px 30px 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  border-radius: 30px;
+}
+/* grafica numeri */ 
+.cell-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(141, 137, 137);
+  border-radius: 50%;
+}
+/* titolo e logo */ 
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* grafica bottoni e input numero cartelle */
+.btn {
+ border: none;
+ outline: none;
+ padding: 12px 30px;
+ background: #42229b;
+ color: #fff;
+ font-size: 12px;
+ cursor: pointer;
+ border-radius: 40px;
+}
+.input-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-color: #edeef0;
+  border-radius: 15px;
+  padding: 10px;
+  width: 20%;
+  margin-top: 20px;
+  padding: 5px;
+}
+/* grafica numeri usciti */
+.checked {
+  background-color: #42229b;
+
+}

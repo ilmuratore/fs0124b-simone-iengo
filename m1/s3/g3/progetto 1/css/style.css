@@ -117,7 +117,7 @@ ul li span{
     /* non va quando ci passi sopra con il mouse....porco il demonio CSS ti odio a morteeeeeeee */
     /* ti odio odio odio cercare reference */ 
 
-/* non funziona ... volevo fa na cosa carina ....
-    ul li span:hover{
-        background-color: #818080;
-    }
+
+ul li span:hover{
+    background: #000000;
+}

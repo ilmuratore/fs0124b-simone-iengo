@@ -154,8 +154,7 @@ function rollTheDices(number){
   let result = {
           sum: 0,
           values: [],
-  };
-
+        };
   for(let i = 0; i < number; i++){
     let roll = dice();
     result.sum += roll;

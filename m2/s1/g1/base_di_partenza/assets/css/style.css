@@ -22,6 +22,7 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    
 }
 header div img {
     margin-bottom: 20px;
@@ -30,6 +31,7 @@ header nav ul {
     margin: 0;
 }
 header nav li {
+    display: inline;
     list-style: none;
 }
 header nav li a {
@@ -178,3 +180,175 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+/* media query orrizontal smartphone max 576px */
+
+@media screen and(max-width: 576px){
+    p, ul, ol {
+        font-size: 15px;    
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* media query tablet  max 1199px */
+
+@media screen and (min-width:577px){
+    header{
+        padding: 5px;
+    };
+
+    main{
+        padding: 10px;
+    };
+
+    h1{
+        font-size: 28px;
+    };
+
+    table{
+        width: 60%;
+        margin-block-start: 30px;
+        margin-block-end: 50px;
+    };
+
+    input{
+        display: inline-block;
+        width: 70%;
+        padding: 10px;
+    };
+
+    button{
+        padding: 10px 20px;
+    };
+
+    footer{
+        padding: 10px 90px;
+    };
+
+
+}
+
+@media screen and (max-width: 1199px){
+    header{
+        text-align: left
+    };
+
+    header .brand img{
+        margin-bottom: 20px;
+    };
+
+}
+
+/* media query laptop and 4k min 1200px */
+
+@media screen and (min-width:1200px){
+    body{
+        line-height: 2;
+    };
+
+    h1{
+        font-size: 36px;
+    };
+
+    h2{
+        font-size: 32px;
+    };
+
+    header{
+        text-align: left;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    };
+
+    main{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    };
+
+    header .brand, header nav, header .brand p{
+        display: inline-block;
+    };
+
+    header .brand{
+        width: 70%;
+    };
+
+    header.brand img{
+        vertical-align: middle;
+    };
+
+    header .brand p{
+        margin-bottom: 0;
+    };
+
+    section{
+        border-radius: 30px;
+    };
+
+    iframe{
+        height: 280px;
+    };
+
+    iframe, section{
+        display: inline-block;
+        width: 60%;
+        margin-inline: -5px;
+        vertical-align: middle;
+    };
+
+    aside div{
+        display: inline-block;
+        width: 40%;
+        margin-inline: 2px;
+    };
+
+    aside div p:last-child{
+        margin-bottom: 0;
+        font-size: 18px;
+        text-align: right;
+    };
+    
+    footer{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    };
+
+}
+
+/* query media print */ 
+
+@media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    };
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    };
+
+    thead tr {
+        background-color: #d3d3d3;
+        color: black;
+    };
+
+    thead tr, tbody tr {
+        border-bottom: 1px solid #666;
+    };
+
+    header, article section, iframe, aside, footer, .social, .toTop {
+      display: none;
+    };
+  }

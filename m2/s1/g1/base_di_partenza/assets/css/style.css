@@ -31,7 +31,7 @@ header nav ul {
     margin: 0;
 }
 header nav li {
-    display: inline;
+    display: inline-block;
     list-style: none;
 }
 header nav li a {
@@ -187,21 +187,28 @@ footer a {
 @media screen and(max-width: 576px){
     p, ul, ol {
         font-size: 15px;    
-    }
+    };
+
     h1{
         font-size: 22px;
-    }
+    };
+
     h2{
         font-size: 18px;
         font-weight: 600;
-    }
+    };
 }
+
 
 /* media query tablet  max 1199px */
 
 @media screen and (min-width:577px){
     header{
         padding: 5px;
+    };
+
+    header nav li{
+        display: inline-block;
     };
 
     main{
@@ -231,8 +238,6 @@ footer a {
     footer{
         padding: 10px 90px;
     };
-
-
 }
 
 @media screen and (max-width: 1199px){
@@ -243,7 +248,6 @@ footer a {
     header .brand img{
         margin-bottom: 20px;
     };
-
 }
 
 /* media query laptop and 4k min 1200px */
@@ -322,7 +326,6 @@ footer a {
         margin-left: auto;
         margin-right: auto;
     };
-
 }
 
 /* query media print */ 
@@ -349,6 +352,6 @@ footer a {
     };
 
     header, article section, iframe, aside, footer, .social, .toTop {
-      display: none;
+        display: none;
     };
-  }
+}

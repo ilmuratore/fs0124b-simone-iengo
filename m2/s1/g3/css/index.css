@@ -4,3 +4,152 @@
 
 
 /* index rules */ 
+/* header with nav rules */ 
+
+.container-nav{
+    display: flex;
+    width: 760px;
+    height: 100px;
+    background-color: #fbf7e3;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-inline: 40px;
+    border-radius: 50px;
+}
+
+.container-nav .nav-link{
+    display: flex;
+    width: 125px;
+    height: 50px;
+    background-color: #f3df85;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #70321c;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-around ;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container-nav .nav-link img{
+    width: 50px;
+}
+
+#shop-btn{
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+/* product card rules */ 
+
+.best-product{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-product{
+    position: relative;
+    background-color: #fbf7e3;
+    border-radius: 60px;
+    height: 300px;
+    width: 230px;
+}
+
+.container-product .product-img{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    width: 230px;
+    aspect-ratio: 0.8/0.6;
+    
+}
+
+.container-product h3{
+    color: #70321c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.container-product .product-description{
+    color: #70321c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+.container-product .price{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    color: #70321c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.container-product .add-cart-btn{
+    position: absolute;
+    top: 250px;
+    left: 55px;
+    width: 120px;
+    height: 40px;
+    background-color: #f3df85;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #70321c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*article rules */ 
+
+.article-container{
+    display: flex;
+    background-color: #fbf7e3;
+    min-width: 500px;
+    min-height: 400px;
+    border-radius: 50px;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.article-container img{
+    width: 300px;
+    float: left;
+    padding: 25px 25px 15px 25px;
+    aspect-ratio: 1/1;
+}
+
+.article-container h2{
+    font-family: 'Roboto', sans-serif;
+    color: #70321c;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 25px 15px 25px 15px ;
+    
+}
+
+.article-container p{
+    font-family: 'Roboto', sans-serif;
+    color: #70321c;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+/* media query */ /* porco zio */ 

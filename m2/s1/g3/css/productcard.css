@@ -3,7 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
 /* product card */
+body{
+    margin: 15px;
+}
 
 .container-product{
     position: relative;
@@ -26,7 +30,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 10px;
 }
 
@@ -40,7 +44,7 @@
 
 .container-product .price{
     position: absolute;
-    top: 210px;
+    top: 200px;
     left: 170px;
     color: #70321c;
     font-family: 'Roboto', sans-serif;
@@ -61,5 +65,6 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 /* */ 

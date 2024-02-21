@@ -1,0 +1,60 @@
+/* google fonts */ 
+
+
+
+
+/* main rules */ 
+
+*{
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+
+/* header with nav rules */ 
+
+.container-nav{
+    display: flex;
+    width: 760px;
+    height: 100px;
+    background-color: #fbf7e3;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+}
+
+.container-nav .nav-link{
+    display: flex;
+    width: 125px;
+    height: 50px;
+    background-color: #f3df85;
+    border: none;
+    border-radius: 50px;
+    color: #70321c;
+    align-items: center;
+    justify-content: space-around ;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-nav .nav-link img{
+    width: 50px;
+}
+
+#shop-btn{
+    height: 75px;
+    width: 150px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+
+/* mobile rules */
+/* tablet rules */ 
+/* pc rules */ 

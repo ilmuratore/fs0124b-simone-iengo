@@ -8,22 +8,23 @@
 .article-container{
     display: flex;
     background-color: #fbf7e3;
-    min-width: 500px;
-    min-height: 400px;
     border-radius: 50px;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    padding: 30px;
 }
 
 .article-container img{
-    width: 300px;
-    float: left;
-    padding: 25px 25px 15px 25px;
-    aspect-ratio: 1/1;
+    flex: 1 1 500px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-.article-container h2{
+.article{
+    flex: 1 1 400px;
+    line-height: 1.4;
+}
+
+.article-container .article h2{
     font-family: 'Roboto', sans-serif;
     color: #70321c;
     font-weight: 600;
@@ -32,7 +33,7 @@
     
 }
 
-.article-container p{
+.article-container .article p{
     font-family: 'Roboto', sans-serif;
     color: #70321c;
     font-weight: 400;

@@ -1,0 +1,83 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+/* graph general */ 
+
+#testoAlternato {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+	width: 400px;
+	height: 100px;
+    border: 1px solid black;
+	color: black;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+}
+
+.parole{
+    display: flex;
+    color: #8aa0af;
+    position: relative;
+}
+
+.parole i{
+    position: absolute;
+    opacity: 0; 
+}
+
+/* keyframe opacity and rotate */
+
+@keyframes rotate{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 10px, 0);
+    }
+    20%, 80%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(0, -5px, 0)
+    }
+}
+
+@keyframes rotate-last{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 10px, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+/* visual animation */
+
+.parole i:nth-of-type(1){
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
+.parole i:nth-of-type(2){
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 1.75s;
+}
+
+.parole i:nth-of-type(3){
+    animation-name: rotate-last;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}

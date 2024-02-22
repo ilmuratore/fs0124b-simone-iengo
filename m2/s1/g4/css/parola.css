@@ -24,12 +24,12 @@
 }
 
 .parole{
-    display: flex;
     color: #8aa0af;
     position: relative;
 }
 
 .parole i{
+    display: flex;
     position: absolute;
     opacity: 0; 
 }

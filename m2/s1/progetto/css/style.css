@@ -8,7 +8,7 @@
 
 
 
-/* header graph */ 
+/* header rules */ 
 
 .head-container{
     background-color: #ffc017;
@@ -17,16 +17,18 @@
     justify-items: center;
     border: 1px solid black;
     position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding-left: 7%;
     padding-right: 7%;
 }
-}
+
 
 .head-container img{
     width: 200px;
-    padding-left: 50px;    
+    padding-left: 50px;
+    cursor: grab; /* eggs */ 
 }
 
 .head-container nav{
@@ -38,7 +40,8 @@
 
 .head-container nav a{
     text-decoration: none;
-    color: #000;    
+    color: #000;
+    cursor: pointer;    
 }
 
 .head-container nav .getStarted-btn{
@@ -49,4 +52,34 @@
     border-radius: 30px;
 }
 
-/* main article */ 
+/* main article rules*/ 
+
+.wrapper{
+    display: flex;
+    background-color: #ffc017;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .wrapper-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;    
+}
+
+.wrapper .wrapper-container h1{
+    font-size: 64px;
+    width: 400px;
+}
+
+.wrapper .wrapper-container p{
+    font-size: 24px;
+    width: 400px;    
+}
+
+.wrapper .wrapper-container .btn{
+    background-color: #000;
+    color: #fff;
+
+}
+

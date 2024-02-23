@@ -1,0 +1,52 @@
+/* google fonts e color */ 
+/* color #ffc017  => giallo sfondo */
+/* color #191919  => black mezzanotte */
+/* color #1a8917  => verde hulk */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+/* header graph */ 
+
+.head-container{
+    background-color: #ffc017;
+    height: 12vh;
+    display: flex;
+    justify-items: center;
+    border: 1px solid black;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+}
+
+.head-container img{
+    width: 200px;
+    padding-left: 50px;    
+}
+
+.head-container nav{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.head-container nav a{
+    text-decoration: none;
+    color: #000;    
+}
+
+.head-container nav .getStarted-btn{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 30px;
+}
+
+/* main article */ 

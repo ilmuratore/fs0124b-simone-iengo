@@ -1,4 +1,4 @@
-let colorTopBar = document.querySelector(".top-navbar");
+let colorTopBar = document.querySelector(".navbar");
 let colorButton = document.querySelector("#navbar-button");
 
 window.addEventListener("scroll", function () {

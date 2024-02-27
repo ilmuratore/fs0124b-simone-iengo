@@ -1,1 +1,9 @@
 /* personal rules over bootstrap */
+
+.container .row .col .card{
+    width: 200px;
+};
+
+.card-img-top{
+    width: 200px;
+};

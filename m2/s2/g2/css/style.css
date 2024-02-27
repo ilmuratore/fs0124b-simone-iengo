@@ -1,5 +1,17 @@
 /* personal rules over bootstrap */
 
+
+#hero{
+    display: flex;
+    max-width: 1400px;
+    height: 250px;
+    background-color: #a1a1a1;
+    border: none;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .container .row .col .card{
     width: 200px;
 };

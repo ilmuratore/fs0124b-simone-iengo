@@ -1,0 +1,16 @@
+{
+  "name": "g3",
+  "version": "0.0.1",
+  "description": "M2 > D3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/style.scss src/css/style.css",
+    "sass -w": "sass src/scss/style.scss src/css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simone Iengo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

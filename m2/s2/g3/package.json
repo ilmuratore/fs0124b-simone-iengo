@@ -4,8 +4,7 @@
   "description": "M2 > D3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/scss/style.scss src/css/style.css",
-    "sass -w": "sass src/scss/style.scss src/css/style.css -w",
+    "createCss": "sass src/scss/style.scss src/css/style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Simone Iengo",

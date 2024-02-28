@@ -1,7 +1,6 @@
 /* inserimento variabili e altri files */
-/*
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+/* reset rules */
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap';
 *,
 *::before,
 *::after {
@@ -46,6 +45,16 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* google fonts */
+/* color scheme */
+/* buttons rules */
+.btn {
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

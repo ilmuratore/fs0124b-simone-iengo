@@ -5,3 +5,65 @@
 @import 'color';
 @import 'btn';
 
+
+
+
+/* nav bar style */ 
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $bghero;
+}
+
+.navbar img{
+    width: 50px;
+}
+
+/* hero styles */ 
+.hero {
+    display: flex;
+    width: 100%;
+    background: $bghero;
+    height: 100vh;
+}
+
+.hero-container{
+    width: 450px;
+    margin: 15px;
+    padding-top: 150px ;
+    padding-left: 50px;
+}
+
+.relative-img{
+    width: 250px;
+    top: 30;
+    left: 150;
+
+}
+
+
+.btn{
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &.discover {
+        background: nth($buttonscolor,1);
+    }
+    &.login {
+        background: nth($buttonscolor,2);
+    }
+    &.contact {
+        background: nth($buttonscolor,3);
+    }
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}

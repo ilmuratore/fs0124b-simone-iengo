@@ -11,6 +11,7 @@
   "author": "Simone Iengo",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "boxicons": "^2.1.4"
   }
 }

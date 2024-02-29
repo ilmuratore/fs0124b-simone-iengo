@@ -9,6 +9,14 @@
 
 
 /* nav bar style */ 
+.all-container{
+    position: relative;
+    width: 1400px;
+    height: 100vh;
+    background: $bghero;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .navbar {
     width: 100%;
@@ -17,17 +25,11 @@
     background: $bghero;
 }
 
-.navbar img{
-    width: 50px;
+ul{
+    display: flex;    
 }
 
 /* hero styles */ 
-.hero {
-    display: flex;
-    width: 100%;
-    background: $bghero;
-    height: 100vh;
-}
 
 .hero-container{
     width: 450px;
@@ -37,6 +39,9 @@
 }
 
 .relative-img{
+    position: absolute;
+    bottom: -100;
+
     width: 250px;
     top: 30;
     left: 150;
@@ -58,10 +63,7 @@
     }
 }
 
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
 }

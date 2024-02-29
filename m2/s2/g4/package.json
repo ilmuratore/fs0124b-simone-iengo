@@ -1,0 +1,16 @@
+{
+  "name": "g4",
+  "version": "1.0.0",
+  "description": "use of sass and bootstrap togheter",
+  "main": "index.js",
+  "scripts": {
+    "createCss": "sass src/scss/style.scss src/css/style.css -w"
+  },
+  "author": "Simone Iengo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "feather-icons": "^4.29.1"
+  }
+}

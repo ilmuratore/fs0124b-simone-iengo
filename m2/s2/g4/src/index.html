@@ -3,13 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Giorno 4 | Simone Iengo </title>
+    <title>Welcome Web Students! | Simone Iengo </title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt="logo.svg" class="d-inline-block align-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Web Students</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start align-item-center flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Browse</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Landings</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex mt-3">
+                            <button type="button" class="btn btn-light position-relative rounded-circle"><i class="bi bi-bell"></i>
+                            <span class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/img/avatar-1.jpg" alt="avatar" class="rounded-circle" style="width: 50px;"> <!--da rettificare -->
+                                    <span class="position-absolute top-100 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container col-xxl-8 px-4 py-5">
+            <div class="hero">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="./assets/img/hero-img.png" class="d-block mx-lg-auto img-flui" alt="hero.bg">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 fw-bold 1h-1 mb3">Welcome Web Students!</h2>
+                        <p class="lead">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur</p>
+                        <div class="d-grip gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Browse Courses</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Are You Instructor?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
     <footer></footer>
 
 

@@ -4,8 +4,6 @@
   "description": "netflix clone in bootstrap 5",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "sass src/scss/bootstrap.scss src/css/bootstrap.css -w",
-    "iconCss": "sass src/scss/icon.scss src/css/icon.css -w",
     "createCss": "sass src/scss/style.scss src/css/style.css -w"
   },
   "author": "Simone Iengo",

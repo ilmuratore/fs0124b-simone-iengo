@@ -1,0 +1,16 @@
+{
+  "name": "netflix-clone",
+  "version": "1.0.0",
+  "description": "netflix clone in bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "sass src/scss/bootstrap.scss src/css/bootstrap.css -w",
+    "createCss": "sass src/scss/style.scss src/css/style.css -w"
+  },
+  "author": "Simone Iengo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}

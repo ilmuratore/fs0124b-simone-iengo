@@ -1,6 +1,7 @@
 .all-container{
     background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)) , url(../assets/img/login-bg.jpeg);
-    height: 100vh;
+    height: 150vh;
+    
 }
 .login-top{
     width: 100vw;
@@ -23,10 +24,26 @@
     padding: 50px;
 }
 
+.login-btn{
+    width: 100%;
+}
+
 .small-text{
     font-size: 13px;
 }
 
 .form-control{
     box-shadow: none !important;
+}
+
+p span{
+color: rgba(212, 212, 212, 0.75);
+}
+
+a{
+    color: rgba(212, 212, 212, 0.75);   
+}
+
+a:hover{
+    color: rgba(220, 53, 69, 0.75);   
 }

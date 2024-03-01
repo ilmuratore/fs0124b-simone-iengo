@@ -1,3 +1,5 @@
+
+/* general container */ 
 .home-container{
     background-color: #141414;
     overflow-x: hidden;
@@ -5,6 +7,7 @@
     position: relative
 }
 
+/* nav bar rules */ 
 .netflix-navbar{
     z-index: 1000;
     transition: background 0.2s linear;
@@ -76,6 +79,7 @@ i{
     margin-left: 20px;
     cursor: pointer;
 }
+
 .netflix-nav{
     display: block ;
     align-items: center;
@@ -92,6 +96,8 @@ i{
     color: #fff;
 }
 
+
+/* hero rules with video */ 
 .netflix-home-video{
     width: 100%;
     z-index: 10;
@@ -213,6 +219,7 @@ i{
 }
 
 .netflix-card-text{
+    color: rgb(0, 186, 0);
     font-size: 12px ;
 }
 
@@ -228,11 +235,6 @@ i{
 .position-slider3{
     top: 10px;
     position: absolute;
-}
-
-.footer{
-    margin-top: 150px;
-    margin-bottom: 100px;
 }
 
 ul{

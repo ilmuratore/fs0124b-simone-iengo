@@ -11,7 +11,15 @@
           "text-align: -webkit-match-parent",
           "print-color-adjust",
           "user-select",
-          "mask-image"
+          "mask-image",
+          "mask-size",
+          "mask-position",
+          "text-decoration-skip-ink",
+          "-webkit-tap-highlight-color",
+          "-webkit-overflow-scrolling",
+          "overflow-anchor",
+          "text-underline-offset",
+          "user-select: all"
         ]
       }
     ],

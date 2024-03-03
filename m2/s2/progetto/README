@@ -1,0 +1,9 @@
+Changelog
+
+version 0.50 Alpha 04/03/2024
+50% work
+- login page with js implementation finished for user experience, good responsiveness on mobile devices
+- The settings page works with the navigation bar and translated at 50%, responsiveness is ok even on mobile devices
+- profile page finished, 0% translation, responsiveness is ok even on mobile devices
+- navigation bar of the main page to be reworked and carousel to be reworked (no responsiveness on mobile devices and graphic errors), implementation of grid change and elements present in the mockup, 0% translations. Animations ok, js to be reworked from 0 with its own model and not taken from reference.
+

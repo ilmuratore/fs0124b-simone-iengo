@@ -11890,7 +11890,7 @@ p span {
   color: rgba(212, 212, 212, 0.75);
 }
 
-a {
+.social-link {
   color: rgba(212, 212, 212, 0.75);
 }
 
@@ -12208,6 +12208,43 @@ ul {
 
 .buttons-profile {
   gap: 20px;
+}
+
+/* setting page */
+.billing, .plan, .security, .extra, .parental {
+  gap: 40px;
+}
+.billing img, .plan img, .security img, .extra img, .parental img {
+  height: 20px;
+}
+
+.badge-new {
+  background-color: #0f84fa;
+  border-radius: 10%;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin: 0 0.5em;
+  padding: 0.15em 0.5em;
+}
+
+.extra p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.extra .badge-new {
+  padding: 0.4em 0.6em;
+  background-color: #5196FF;
+  font-size: 0.8em;
+}
+
+.parental img {
+  height: 60px;
+  border-radius: 5px;
+}
+.parental i {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

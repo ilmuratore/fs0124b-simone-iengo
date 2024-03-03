@@ -424,8 +424,8 @@ caption {
 }
 
 th {
-  text-align: -webkit-match-parent;
   text-align: inherit;
+  text-align: -webkit-match-parent;
 }
 
 thead,
@@ -11901,9 +11901,6 @@ a:hover {
 /* home page */
 /* general container */
 .home-container {
-  background-color: #141414;
-  overflow-x: hidden;
-  width: 100%;
   position: relative;
 }
 
@@ -11911,19 +11908,18 @@ a:hover {
 .netflix-navbar {
   z-index: 1000;
   transition: background 0.2s linear;
-  position: fixed;
-  min-width: 768px;
+}
+
+.netflix-padding-left {
+  padding-left: 57px;
+}
+
+.netflix-padding-right {
+  padding-right: 57px;
 }
 
 .navbar-brand img {
   width: 100px;
-}
-
-.netflix-row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .netflix-row .left {
@@ -12160,6 +12156,58 @@ ul {
   font-weight: 200;
   color: rgb(139, 139, 139);
   margin-left: 28px;
+}
+
+/* profile page */
+.input-group input {
+  border-radius: 0;
+  border: none;
+  color: #fff;
+}
+.input-group input:focus {
+  box-shadow: 0 0 0 2px #6c757d;
+}
+.input-group input::placeholder {
+  color: #fff;
+}
+
+#profile-page img {
+  height: 100px;
+}
+
+.profile-top {
+  gap: 20px;
+}
+
+.pencil {
+  top: 35px;
+  left: -35px;
+  scale: 0.2;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.5607843137);
+  cursor: pointer;
+}
+.pencil:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6705882353);
+  filter: brightness(150%);
+}
+
+.form-check input {
+  border-color: #0dcaf0;
+  background-color: #212529;
+}
+.form-check input:focus {
+  box-shadow: none;
+  border-color: #0dcaf0;
+}
+.form-check input:checked {
+  background-color: #212529;
+  border-color: #0dcaf0;
+}
+
+.buttons {
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,8 @@
           "-webkit-overflow-scrolling",
           "overflow-anchor",
           "text-underline-offset",
-          "user-select: all"
+          "user-select: all",
+          "scale"
         ]
       }
     ],

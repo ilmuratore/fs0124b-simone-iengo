@@ -12179,7 +12179,7 @@ ul {
   gap: 20px;
 }
 
-.pencil {
+.edit {
   top: 35px;
   left: -35px;
   scale: 0.2;
@@ -12188,7 +12188,7 @@ ul {
   box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.5607843137);
   cursor: pointer;
 }
-.pencil:hover {
+.edit:hover {
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6705882353);
   filter: brightness(150%);
 }
@@ -12206,7 +12206,7 @@ ul {
   border-color: #0dcaf0;
 }
 
-.buttons {
+.buttons-profile {
   gap: 20px;
 }
 

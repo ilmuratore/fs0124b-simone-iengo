@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', (event) =>{ //ho inserito l'evento
             this.species = species;
             this.breed = breed;
         }
-        stessoPadrone(otherPet){
+        hasSameOwner(otherPet){
             return this.ownerName === otherPet.ownerName;
         }
     }
     
-    let pets =[]
+    let pets =[];
 
     document.getElementById('petForm').addEventListener('submit', function(event){
         event.preventDefault();

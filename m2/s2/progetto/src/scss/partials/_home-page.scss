@@ -3,95 +3,16 @@
     position: relative;
 }
 
-/* nav bar rules */
-.netflix-navbar {
-    z-index: 1000;
-    transition: background 0.2s linear;
-}
-.netflix-padding-left{
-    padding-left: 57px;
-}
-
-.netflix-padding-right{
-    padding-right: 57px;
-}
-
-.navbar-brand img {
-    width: 100px
-}
-
-.netflix-row .left {
-    width: max-content;
-}
-.netflix-row .right {
-    width: max-content;
-}
-
-.netflix-dropdown-box {
-    display: none;
-}
-
-.netflix-dropdown {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    font-size: 9px;
-}
-
-.netflix-dropdown-box .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.784);
-    font-size: 9px;
-    color: #fff;
-    margin-left: -80px;
-    border-top: 3px solid #fff;
-    margin-top: 30px;
-}
-
-.netflix-dropdown-box .dropdown-menu .dropdown-item {
-    color: rgba(255, 255, 255, 0.646);
-    text-align: center;
-    width: 250px;
-    font-size: 15px;
-    padding: 10px 20px;
-}
-
-.netflix-dropdown-box .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.133);
-    color: #fff;
-}
-
-i {
-    font-size: 20px;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-.netflix-profile {
-    width: 30px;
-    height: 30px;
-    background-color: gray;
-    border-radius: 4px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.netflix-nav {
-    display: block;
-    align-items: center;
-}
-
-.netflix-nav button {
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.623);
-    border: none;
-    font-size: 13px;
-}
-
-.netflix-nav button:hover {
-    color: #fff;
+.mt-fix{
+    margin-top: 6rem !important;
 }
 
 /* hero rules with video */
+
+.hero{
+    display: none;
+}
+
 .netflix-home-video {
     width: 100%;
     z-index: 10;
@@ -137,23 +58,6 @@ i {
     width: 50%;
 }
 
-.slider {
-    position: absolute;
-    top: 600px;
-    z-index: 500;
-}
-
-.slider2 {
-    position: absolute;
-    top: 800px;
-    z-index: 500;
-}
-
-.slider3 {
-    position: absolute;
-    top: 1000px;
-    z-index: 500;
-}
 
 .card {
     width: 250px;

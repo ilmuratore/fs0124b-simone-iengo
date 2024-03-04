@@ -1,6 +1,17 @@
 Changelog
 
-versione 0.55 Alpha 04/03/2024 01:26
+version 0.75 Alpha 04/03/2024 2:48
+
+75% work 
+-fixed navbar for fixed top 
+- added genres selector and two button for grid change styling 
+- reimplemented hero with video but i don't fix the position and the responsivness
+- implemented and reworked a 2.0 js function fo showing the hero section 
+- my english is so bad
+- responsivness need to rework to 0! ( i hate my life )
+
+
+version 0.55 Alpha 04/03/2024 01:26
 55% work
 - fixed links url (my error)
 - finally a decent nav bar in home page ! (but the responsivness ... gne')

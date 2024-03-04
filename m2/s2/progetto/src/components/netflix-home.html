@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <div class="home-container bg-dark w-100 overflow-auto">
+  <div class="home-container bg-dark w-100 overflow-auto px-3">
     <!-- nav nar responsive rework in progress-->
     <header class="sticky-top bg-dark pt-1">
-      <nav  class=" mb-3 px-5 ">
+      <nav class="mb-3 px-5 bg-dark fixed-top">
         <div class="d-flex flex-wrap align-items-center  justify-content-between navbar navbar-expand-md  ">
           <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
             <img class="bi me-2 header-logo" src="../assets/img/netflix_logo.png" alt="Netflix logo" width="100px">
@@ -32,9 +32,9 @@
             </ul>
                   
             <div class="d-flex text-white side-btns align-items-center">
-              <i class="d-none d-lg-block bi bi-search"></i>
-              <p class="d-none d-lg-block p-0 m-0">KIDS</p>
-              <i class="d-none d-lg-block bi bi-bell-fill"></i>      
+              <i class="d-none d-lg-block bi bi-search px-2"></i>
+              <p class="d-none d-lg-block p-0 m-0 px-2">KIDS</p>
+              <i class="d-none d-lg-block bi bi-bell-fill px-2"></i>      
             </div>
           </div>
           <div class="dropdown position-relative" data-bs-theme="dark">
@@ -52,12 +52,36 @@
           </div>
         </div>
       </nav>
-  </header>
+    </header>
     <main>
+        <!-- section with genres selection -->
+        <div id="section-title" class="mt-fix d-flex align-items-center justify-content-between">
+          <div id="title-sx" class="d-flex align-items-center flex-wrap">
+            <h1 class="d-inline text-white px-2">TV Shows</h1>
+            <div class="dropdown d-inline" data-bs-theme="dark">
+              <button class="btn btn-outline-secondary bg-black text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres
+              </button>
+              <ul class="dropdown-menu bg-black">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Crime</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Documentary</a></li>
+                <li><a class="dropdown-item" href="#">Musical</a></li>
+                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-secondary opacity-50 py-1" id="toggleButton1"><i class="bi bi-text-left"></i></button>
+            <button type="button" class="btn btn-outline-secondary opacity-50 py-1" id="toggleButton2"><i class="bi bi-grid-fill"></i></button>
+          </div>
+        </div>
+        <!-- -->
 
-
-      <!-- hero with video  rework with responsivness
-        <div class=" hero netflix-home-video">
+              <!-- hero with video  rework with responsivness -->
+        <div class="hero netflix-home-video">
           <video src="../assets/video/video.av1" autoplay muted loop class="w-100"></video>
           <div class="content d-flex flex-column align-item-start">
             <div class="left">
@@ -68,12 +92,11 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
-    
       <!-- slider of  menu no responsivness-->
-      <div class="slider-box mt-3">
-        <div class="container-fluid slider">
+      <div class="slider-box mt-5">
+        <div class="container-fluid slide mt-2">
           <section class="d-flex justify-content-between margin-right margin-title">
             <p class="text-white">Trending Now</p>
             <div>
@@ -489,7 +512,7 @@
             </button>
           </div>
         </div>
-        <div class="container-fluid  slide2"> 
+        <div class="container-fluid  slide2 mt-2"> 
           <section class="d-flex justify-content-between margin-right margin-title">
             <p class="text-white">Watch It Again</p>
             <div class="">
@@ -905,7 +928,7 @@
             </button>
           </div>
         </div>
-        <div class="container-fluid  slide3">
+        <div class="container-fluid  slide3 mt-3">
           <section class="d-flex justify-content-between margin-right margin-title2">
             <p class="text-white"> <b>New Releases</b> </p>
             <div class="">
@@ -1267,7 +1290,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="../assets/home media/media3.webp18" class="card-img-top" alt="...">
+                    <img src="../assets/home media/media18.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
@@ -1323,69 +1346,68 @@
         </div>
       </div>
       <!-- sliders-end -->
-
-
-      <!-- footer  -->
-      <div class="container my-5 ">
-        <div class="ms-auto">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-twitter-x"></i>
-          <i class="bi bi-youtube"></i>
-        </div>
-        <div class="row">
-          <div class="col-md-10 col-lg-12 mx-auto">
-            <div class="row">
-              <div class="col-xs-2 col-md-3">
-                <ul>
-                  <li>Audio and Subtitle</li>
-                  <li>Media Center</li>
-                  <li>Privacy</li>
-                  <li>Contact Us</li>
-                </ul>
-              </div>
-              <div class="col-xs-2 col-md-3">
-                <ul>
-                  <li>Audio description</li>
-                  <li>Investor Relation</li>
-                  <li>Terms and Conditions</li>
-                  <li>Legal Notices</li>
-                </ul>
-              </div>
-              <div class="col-xs-2 col-md-3">
-                <ul>
-                  <li>Help Center</li>
-                  <li>Jobs</li>
-                </ul>
-              </div>
-              <div class="col-xs-2 col-md-3">
-                <ul>
-                  <li>Gift card</li>
-                  <li>Subscription</li>
-                </ul>
-              </div>
+  </main>
+  <footer >
+    <!-- footer  -->
+    <div class="container my-5 ">
+      <div class="ms-auto text-white">
+        <i class="bi bi-facebook px-2"></i>
+        <i class="bi bi-instagram px-2"></i>
+        <i class="bi bi-twitter-x px-2"></i>
+        <i class="bi bi-youtube px-2"></i>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-lg-12 mx-auto">
+          <div class="row">
+            <div class="col-xs-2 col-md-3">
+              <ul>
+                <li>Audio and Subtitle</li>
+                <li>Media Center</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-10 mx-auto">
-            <div class="row">
-              <div class="col">
-                <p class="copy-right">© 1997-2024 Netflix, inc {i-0d00fcda2fdf9c0de}</p>
-              </div>
+            <div class="col-xs-2 col-md-3">
+              <ul>
+                <li>Audio description</li>
+                <li>Investor Relation</li>
+                <li>Terms and Conditions</li>
+                <li>Legal Notices</li>
+              </ul>
+            </div>
+            <div class="col-xs-2 col-md-3">
+              <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+              </ul>
+            </div>
+            <div class="col-xs-2 col-md-3">
+              <ul>
+                <li>Gift card</li>
+                <li>Subscription</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-
-    <!-- footer finished -->
-
-
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="row">
+            <div class="col">
+              <p class="copy-right">© 1997-2024 Netflix, inc {i-0d00fcda2fdf9c0de}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</main>  
-  <script src="../js/bootstrap.bundle.js"></script>
-  <script src="../js/script.js"></script>
+    <!-- footer finished -->
+  </footer>
+</div>
+  
+  
+  
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/homescript.js"></script>
 </body>
 
 </html>

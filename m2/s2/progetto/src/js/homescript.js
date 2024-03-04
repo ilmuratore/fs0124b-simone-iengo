@@ -24,3 +24,9 @@ secondButton.addEventListener('click', function(){
 //        heroDiv.style.display = 'none';
 //    }
 //});
+
+// implementazione di un video player funziona solo sull'elemento hero
+
+function openPage(){
+    window.open('../components/netflix-player.html', '_blank');
+}

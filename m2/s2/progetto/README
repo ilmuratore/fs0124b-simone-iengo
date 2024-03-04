@@ -1,6 +1,14 @@
 Changelog
 
-version 0.50 Alpha 04/03/2024
+versione 0.55 Alpha 04/03/2024 01:26
+55% work
+- fixed links url (my error)
+- finally a decent nav bar in home page ! (but the responsivness ... gne')
+- commented the hero section it sucks ( but i want this figata of video playing damn me!)
+- the carousel now is completely bugged. work on it
+
+
+version 0.50 Alpha 04/03/2024 00:48
 50% work
 - login page with js implementation finished for user experience, good responsiveness on mobile devices
 - The settings page works with the navigation bar and translated at 50%, responsiveness is ok even on mobile devices

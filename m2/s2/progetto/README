@@ -1,5 +1,21 @@
 Changelog
 
+version 0.80 Alpha 04/03/2024 19:19
+80% work
+- reworked hero section with better bootstrap class implementation
+- the hero video is responsivness, but the img make more work on in (but the most of work is completed)
+- rewrite of the hero section css rules for better maintenance 
+- added a light shadow on top and bottom of the video hero for a more Cinema trailer style
+
+i admit that the most of work is ok.
+Roadmap:
+- translation in Italian of all elements of the site
+- better mobile experience 
+- adding a player video page
+
+
+
+
 version 0.75 Alpha 04/03/2024 2:48
 
 75% work 

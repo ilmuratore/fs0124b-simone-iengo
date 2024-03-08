@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+            <a class="navbar-brand" href="#">Shop Online</a>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                        <a href="./shop-page.html">Vai allo Shop</a>
+                    </li>
+                    <!-- Aggiungi altre voci di navigazione qui -->
+                </ul>
+                <form class="my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- hero section -->
+        <div class="jumbotron">
+            <h1 class="display-4">Benvenuto nel nostro shop online!</h1>
+            <p class="lead">Qui troverai una vasta selezione di prodotti.</p>
+          </div>
+        <!-- admin panel -->
+        <div class="container">
+            <h1>Inserisci un nuovo prodotto</h1>
+            <form id="prodottoForm">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+              </div>
+              <div class="form-group">
+                <label for="descrizione">Descrizione</label>
+                <input type="text" class="form-control" id="descrizione" required>
+              </div>
+              <div class="form-group">
+                <label for="brand">Brand</label>
+                <input type="text" class="form-control" id="brand" required>
+              </div>
+              <div class="form-group">
+                <label for="imageUrl">URL dell'immagine</label>
+                <input type="text" class="form-control" id="imageUrl" required>
+              </div>
+              <div class="form-group">
+                <label for="prezzo">Prezzo</label>
+                <input type="number" class="form-control" id="prezzo" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Inserisci prodotto</button>
+            </form>
+          </div>
+    </main>
+
+
+
+
+    <script src="../js/gestione-prodotti.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form di registrazione</h2>
+
+    <input type="text" id="nome" name="nome">
+    <button onclick="salva()">Salva</button>
+    <button onclick="rimuovi()">Rimuovi</button>
+
+
+
+    <h2>Contatore del tempo</h2>
+
+    <div id="tempo"></div>
+
+
+
+
+
+
+
+<script>
+        function salva(){
+            let nome = document.getElementById("nome").value;
+            localStorage.setItem("nome", nome);
+            console.log(localStorage);
+        }
+
+        function rimuovi(){
+            localStorage.removeItem("nome");
+        }
+
+        let tempo;
+        if(sessionStorage.getItem("tempo")){
+            tempo = parseInt(sessionStorage.getItem("tempo"));
+        } else {
+            tempo = 0;
+        }
+
+        setInterval(function(){
+            tempo++;
+            document.getElementById("tempo").innerHTML = tempo;
+            sessionStorage.setItem("tempo", tempo);
+        }, 1000);
+
+    
+    </script>
+</body>
+</html>

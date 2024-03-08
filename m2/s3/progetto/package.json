@@ -1,0 +1,14 @@
+{
+  "name": "shop-online-test",
+  "version": "1.0.0",
+  "description": "test of a shop online structure with back-office page for admin",
+  "main": "index.js",
+  "scripts": {
+    "createCss": "sass src/scss/style.scss src/css/style.css -w"
+  },
+  "author": "Simone Iengo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

@@ -8,9 +8,10 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardElementsComponent } from './cardElements/cardElements.component';
 import { HomeComponent } from './Home/Home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [				
+  declarations: [
     AppComponent,
       HeaderNavComponent,
       FooterComponent,
@@ -20,7 +21,8 @@ import { HomeComponent } from './Home/Home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

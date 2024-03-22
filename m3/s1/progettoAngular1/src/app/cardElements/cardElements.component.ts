@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cardElements',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardElementsComponent implements OnInit {
 
+    data:any = [];
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit():void {
+    this.http.get('../../assets/db.json').subscribe(data => {
+      this.data = data;
+    });
   }
 
 }

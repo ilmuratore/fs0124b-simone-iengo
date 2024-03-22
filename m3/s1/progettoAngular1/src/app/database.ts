@@ -1,6 +1,6 @@
-export type Root = Root2[];
+export type database = database2[];
 
-export interface Root2 {
+export interface database2 {
   brand:string;
   brandLogo:string;
   model:string;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { database2 } from '../database';
 
 @Component({
   selector: 'app-cardElements',
@@ -8,13 +9,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CardElementsComponent implements OnInit {
 
-    data:any = [];
+    data:database2[] = [];
   constructor(private http: HttpClient) { }
 
   ngOnInit():void {
-    this.http.get('../../assets/db.json').subscribe(data => {
+    this.http.get<database2[]>('../../assets/db.json').subscribe(data => {
       this.data = data;
     });
   }
-
 }

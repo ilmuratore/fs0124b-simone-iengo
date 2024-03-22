@@ -10,9 +10,5 @@ export class HomepageHeroComponent {
 
   constructor(private router: Router) { }
 
-  navigateToBrand(brandName: string) {
-    console.log(`Navigating to ${brandName}`);
-    this.router.navigate([`/${brandName}`]);
-  }
 
 }

@@ -8,7 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HomepageHeroComponent {
 
+  carComponents = ['fiatbrand', 'fordbrand', 'audibrand' ]
+
   constructor(private router: Router) { }
 
+  navigateToRandomCar(){
+    const randomIndex = Math.floor(Math.random() * this.carComponents.length);
+    const randomCarComponent = this.carComponents[randomIndex];
+    this.router.navigate([randomCarComponent]);
+  }
 
 }

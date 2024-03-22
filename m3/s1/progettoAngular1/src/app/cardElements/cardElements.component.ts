@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class CardElementsComponent implements OnInit {
 
     data:any = [];
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit():void {
     this.http.get('../../assets/db.json').subscribe(data => {

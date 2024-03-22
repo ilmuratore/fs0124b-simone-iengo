@@ -1,28 +1,14 @@
 <div class="row justify-content-around gap-2">
-<div class="card col-lg-3 col-md-6 col-sm-12" >
-  <img src="..." class="card-img-top" alt="...">
+<div class="card col-lg-3 col-md-6 col-sm-12" *ngFor="let item of randomCard" [ngClass]="{'card-not-available' : !item.available}">
+  <img [src]="item.modelImage" class="card-img-top" alt="{{item.model}}">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">{{item.brand}} {{item.model}}</h5>
+    <p class="card-text">{{item.year}} {{item.price}}€</p>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
+      <li class="list-group-item" *ngIf="item.available">Disponibile</li>
+      <li class="list-group-item" *ngIf="!item.available">Non Disponibile</li>
     </ul>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card col-lg-3 col-md-6 col-sm-12" >
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Dettagli</a>
   </div>
 </div>
 </div>

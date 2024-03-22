@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { database2 } from '../database';
+
 
 @Component({
   selector: 'app-audibrand',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AudibrandComponent implements OnInit {
 
-  constructor() { }
+  data:database2[] = [];
+constructor(private http: HttpClient) { }
 
-  ngOnInit() {
-  }
+ngOnInit():void {
+  this.http.get<database2[]>('../../assets/db.json').subscribe(data => {
+    this.data = data;
+  });
+}
 
 }
+
+
+

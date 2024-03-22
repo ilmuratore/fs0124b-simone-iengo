@@ -9,18 +9,22 @@ import { FooterComponent } from './footer/footer.component';
 import { CardElementsComponent } from './cardElements/cardElements.component';
 import { HomeComponent } from './Home/Home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BrandpageComponent } from './brandpage/brandpage.component';
 import { HomepageHeroComponent } from './homepage-hero/homepage-hero.component';
+import { FiatbrandComponent } from './fiatbrand/fiatbrand.component';
+import { AudibrandComponent } from './audibrand/audibrand.component';
+import { FordbrandComponent } from './fordbrand/fordbrand.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
       HeaderNavComponent,
       FooterComponent,
       CardElementsComponent,
       HomeComponent,
-      BrandpageComponent,
-      HomepageHeroComponent
+      HomepageHeroComponent,
+      FiatbrandComponent,
+      AudibrandComponent,
+      FordbrandComponent
    ],
   imports: [
     BrowserModule,

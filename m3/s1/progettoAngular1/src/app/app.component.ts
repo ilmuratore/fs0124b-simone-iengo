@@ -9,13 +9,4 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'progettoAngular1';
-  isHomePage = false ;
-
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() =>{
-      this.isHomePage = this.activatedRoute.firstChild?.snapshot.routeConfig?.path === 'home';
-    });
-  }
 }

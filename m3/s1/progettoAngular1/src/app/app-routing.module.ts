@@ -9,6 +9,7 @@ import { AudibrandComponent } from './audibrand/audibrand.component';
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'fiatbrand', component: FiatbrandComponent},
   {path: 'fordbrand', component: FordbrandComponent},

@@ -1,6 +1,5 @@
-import { Component
- } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage-hero',
@@ -11,8 +10,9 @@ export class HomepageHeroComponent {
 
   constructor(private router: Router) { }
 
-  navigateToBrandPage(brandName: string) {
-    this.router.navigate(['/brandpage', brandName]);
+  navigateToBrand(brandName: string) {
+    console.log(`Navigating to ${brandName}`);
+    this.router.navigate([`/${brandName}`]);
   }
 
 }

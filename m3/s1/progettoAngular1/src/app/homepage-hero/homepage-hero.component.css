@@ -1,0 +1,17 @@
+.img-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+
+}
+
+.img-fluid img {
+    width: 150px;
+    height: auto;
+    display: inline;
+    margin: 0 auto;
+    cursor: pointer;
+}

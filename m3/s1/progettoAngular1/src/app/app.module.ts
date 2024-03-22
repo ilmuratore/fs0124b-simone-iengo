@@ -10,15 +10,17 @@ import { CardElementsComponent } from './cardElements/cardElements.component';
 import { HomeComponent } from './Home/Home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrandpageComponent } from './brandpage/brandpage.component';
+import { HomepageHeroComponent } from './homepage-hero/homepage-hero.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       HeaderNavComponent,
       FooterComponent,
       CardElementsComponent,
       HomeComponent,
-      BrandpageComponent
+      BrandpageComponent,
+      HomepageHeroComponent
    ],
   imports: [
     BrowserModule,

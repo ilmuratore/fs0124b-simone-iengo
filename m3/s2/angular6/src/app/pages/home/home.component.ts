@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ProductService } from '../../services/product.service';
+import { Product, Root } from '../../interface';
 
 @Component({
   selector: 'app-home',
@@ -8,34 +10,16 @@ import { ProductService } from '../../services/product.service';
 })
 export class HomeComponent implements OnInit{
 
-  productList: any [] = [];
-  cartObj : any = {
-    "CartId": 0,
-    "CustId": 1,
-    "ProductId": 0,
-    "Quantity": 0,
-    "AddedDate": "2023-04-27T07:12:40.926Z"
-  };
-  constructor(private productService: ProductService) {
-
-  }
+  productList: Product[] = [];
+  constructor(private productService: ProductService) { }
   ngOnInit(): void {
     this.loadAllProducts();
   }
 
-  loadAllProducts() {
-    this.productService.getAllProducts().subscribe((result: any)=>{
-      this.productList = result.data;
-    })
-  }
-
-  addItemToCart(productId: number) {
-    this.cartObj.ProductId = productId;
-    this.productService.addToCart(this.cartObj).subscribe((result: any)=>{
-       if(result.result) {
-        alert("Product Added To Cart");
-        this.productService.cartAddedSubject.next(true);
-       }
-    })
+  loadAllProducts(): void {
+    this.productService.getAllProducts().subscribe((response) => {
+      this.productList = response.products;
+      console.log(this.productList)
+    });
   }
 }

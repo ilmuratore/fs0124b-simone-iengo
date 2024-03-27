@@ -17,7 +17,7 @@
                   <div class="col-lg-3 pt-1" *ngFor="let product of productList">
                       <div class="box-shadow">
                           <div class="card">
-                              <img class="img-fluid" style="height: 200px;" [src]="product.productImageUrl" class="card-img-top"
+                              <img class="img-fluid product-image"  [src]="product.productImageUrl" class="card-img-top"
                                   alt="...">
                               <div class="card-body">
                                   <h5 class="card-title">{{product.productName}}</h5>
@@ -27,8 +27,7 @@
 
                                   <div class="row">
                                       <div class="col-6">
-                                          <i class="fa-solid fa-star-half-stroke  m-0"
-                                              style="color: #f1f50f;"></i>
+                                          <i class="fa-solid fa-star-half-stroke m-0 star-icon"></i>
                                               <span class="text-muted">(21)</span>
                                       </div>
                                       <div class="col-6 text-end">

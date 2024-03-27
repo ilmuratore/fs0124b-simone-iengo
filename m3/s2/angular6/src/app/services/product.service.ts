@@ -15,19 +15,18 @@ export class ProductService {
     return this.http.get<any[]>("https://dummyjson.com/products");
   }
 
- /*
   addToCart(obj: any) : Observable<any> {
-    return this.http.post<any>("http://onlinetestapi.gerasim.in/api/Ecomm/AddToCart",obj);
+    return this.http.post<any>("",obj);
   }
 
   getCartItemsByCustId(custId: number) : Observable<any[]>  {
-    return this.http.get<any[]>("http://onlinetestapi.gerasim.in/api/Ecomm/GetCartProductsByCustomerId?id=" + custId);
+    return this.http.get<any[]>("https://dummyjson.com/products/" + custId);
   }
    removeCartItemById(cartId: number) : Observable<any[]>  {
-    return this.http.get<any[]>("http://onlinetestapi.gerasim.in/api/Ecomm/DeleteProductFromCartById?id=" + cartId);
+    return this.http.get<any[]>("https://dummyjson.com/products/" + cartId);
   }
 
   makeSale(obj: any) : Observable<any> {
-    return this.http.post<any>("http://onlinetestapi.gerasim.in/api/Ecomm/AddNewSale",obj);
-  } */
+    return this.http.post<any>("",obj);
+  }
 }

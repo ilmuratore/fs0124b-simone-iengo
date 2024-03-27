@@ -20,16 +20,16 @@
                               <img class="img-fluid product-image"  [src]="Products.images[1]" class="card-img-top"
                                   alt="...">
                               <div class="card-body">
-                                  <h5 class="card-title">Replace with variable or expression</h5>
+                                  <h5 class="card-title">{{Products.title}}</h5>
                                   <p class="card-text"><span
-                                            class="text-danger fw-semibold me-2">$variable1</span><del> $variable2</del>
+                                            class="text-danger fw-semibold me-2">{{Products.price}}$</span>
                                   <div class="row">
                                       <div class="col-6">
                                           <i class="fa-solid fa-star-half-stroke m-0 star-icon"></i>
-                                              <span class="text-muted">(21)</span>
+                                              <span class="text-muted">({{Products.stock}})</span>
                                       </div>
                                       <div class="col-6 text-end">
-                                          <button class="btn btn-sm btn-success"> Add To Cart</button>
+                                          <button class="btn btn-sm btn-success">Add To Cart</button>
                                       </div>
                                   </div>
 

@@ -1,0 +1,11 @@
+<div *ngFor="let todo of todos; let i = index">
+  <p>{{ todo.title }} - {{ todo.user }}</p>
+  <button (click)="removeTask(todo.title)">Rimuovi</button>
+  <button (click)="updateTask(todo.title, newTask.value)">Aggiorna</button>
+  <input #newTask type="text" placeholder="Nuovo task">
+</div>
+
+
+<input #newTask type="text" placeholder="Nuovo task">
+<input #user type="text" placeholder="Utente">
+<button (click)="addTask(newTask.value, user.value)">Aggiungi</button>

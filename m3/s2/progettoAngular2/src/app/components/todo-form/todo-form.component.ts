@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit, output } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { debounceTime, takeUntil } from 'rxjs/operators';
 
-import { ToDo} from '';
+import { ToDo} from '../../state/todo/todo.model';
 
 @Component({
   selector: 'app-todo-form',
@@ -16,13 +16,17 @@ export class TodoFormComponent implements OnDestroy, OnInit {
 
   task: FormControl;
 
+  private unsubscribe = new Subject<void>()
+
+  constructor() {}
+
   ngOnDestroy(): void {
       this.unsubscribe.next();
       this.unsubscribe.complete();
   }
 
   ngOnInit(): void {
-      this.task = FormControl();
+      this.task = new FormControl();
       this.task.valueChanges.pipe(debounceTime(200), takeUntil(this.unsubscribe))
       .subscribe((value: string) => this.toDoChange.emit({task :value}));
   }

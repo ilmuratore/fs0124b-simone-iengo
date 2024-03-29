@@ -1,6 +1,6 @@
-import { Action } from 'ngrx/store';
+import { Action } from '@ngrx/store';
 
-import { ToDo } from './todo.model';
+import {ToDo} from './todo.model';
 
 export enum ToDoActionTypes {
   AddToDo = '[ToDo] Add ToDo',

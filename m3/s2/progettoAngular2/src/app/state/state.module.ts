@@ -1,4 +1,4 @@
-import {ModuleWithProviders, NgModule, NgModule, Optional, SkipSelf, SkipSelft} from '@angular/core';
+import {ModuleWithProviders, NgModule, Optional, SkipSelf} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
@@ -19,14 +19,14 @@ export class StateModule {
     @SkipSelf()
     parentModule: StateModule
   ){
-    if (parentModule){
-      throw new Error('StateModule is already loaded. Import it in the AppModule only')
+    if(parentModule){
+      throw new Error('StateModule is already loaded. Import it in the AppModule only');
     }
   }
 
-  static forRoot(): ModuleWithProviders {
-    return {
-      NgModule: StateModule
+  static forRoot(): ModuleWithProviders<StateModule>{
+    return{
+      ngModule: StateModule
     };
   }
 }

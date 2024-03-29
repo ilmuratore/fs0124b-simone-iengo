@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { MatCheckboxChange} from '@angular/material';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
-export class TodoComponent implements OnInit {
+export class TodoComponent {
 
  @Input() toDo: ToDo;
 

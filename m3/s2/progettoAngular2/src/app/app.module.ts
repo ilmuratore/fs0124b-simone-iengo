@@ -1,21 +1,34 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatListModule} from '@angular/material/list';
 import { AppComponent } from './app.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { TodoComponent } from './components/todo/todo.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import {StateModule } from './state/state.module';
+import { TodoFormComponent } from './components/todo-form/todo-form.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatListModule,
+    StateModule.forRoot()
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  declarations : [ AppComponent, TodoComponent, TodoListComponent, TodoFormComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../todo.service';
+import { TodoService } from '../services/todo.service';
+import { users } from '../../assets/users';
 
 @Component({
   selector: 'app-todo-list',
@@ -13,17 +14,8 @@ export class TodoListComponent implements OnInit{
 
   constructor(private todoService: TodoService){}
 
-  ngOnInit(): void {}
-
-  addTask(task: string, user: string){
-    this.todoService.addTask(task, user);
+  ngOnInit(): void {
+    console.log(this.todos)
   }
 
-  removeTask(task: string){
-    this.todoService.removeTask(task);
-  }
-
-  updateTask(oldTask: string, newTask: string){
-    this.todoService.updateTask(oldTask, newTask);
-  }
 }

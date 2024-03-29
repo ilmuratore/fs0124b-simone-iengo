@@ -1,5 +1,4 @@
-import { Todo } from 'src/app/interfaces/todo.interface';
-
+import { Todo } from '../app/interfaces/todo.interface';
 export const todos: Todo[] = [
   {
     id: 1,

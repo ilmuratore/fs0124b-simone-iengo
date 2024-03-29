@@ -1,43 +1,42 @@
 import { Action } from '@ngrx/store';
 
-import {ToDo} from './todo.model';
+import { ToDo } from './todo.model';
 
 export enum ToDoActionTypes {
-  AddToDo = '[ToDo] Add ToDo',
-  ClearToDos = '[ToDo] Clear ToDos',
-  CompleteToDos = '[ToDo] Complete ToDos',
-  IncompleteToDo = '[ToDo] Incomplete ToDo',
-  RemoveToDo = '[ToDo] Remove ToDo',
+  AddToDo = '[Todo] Add Todo',
+  ClearToDos = '[Todo] Clear Todos',
+  CompleteToDo = '[Todo] Complete Todo',
+  IncompleteToDo = '[Todo] Incomplete Todo',
+  RemoveToDo = '[Todo] Remove Todo'
 }
 
 export class AddToDo implements Action {
   readonly type = ToDoActionTypes.AddToDo;
-  constructor(public payload: ToDo){}
+  constructor(public payload: ToDo) {}
 }
 
 export class ClearToDos implements Action {
   readonly type = ToDoActionTypes.ClearToDos;
 }
 
-export class CompleteToDos implements Action {
-  readonly type = ToDoActionTypes.CompleteToDos;
-  constructor(public payload: ToDo){}
+export class CompleteToDo implements Action {
+  readonly type = ToDoActionTypes.CompleteToDo;
+  constructor(public payload: ToDo) {}
 }
 
 export class IncompleteToDo implements Action {
   readonly type = ToDoActionTypes.IncompleteToDo;
-  constructor(public payload: ToDo){}
+  constructor(public payload: ToDo) {}
 }
 
 export class RemoveToDo implements Action {
   readonly type = ToDoActionTypes.RemoveToDo;
-  constructor(public payload: ToDo){}
+  constructor(public payload: ToDo) {}
 }
 
-export type ToDoAction =
+export type ToDoActions =
   | AddToDo
   | ClearToDos
-  | CompleteToDos
+  | CompleteToDo
   | IncompleteToDo
   | RemoveToDo;
-

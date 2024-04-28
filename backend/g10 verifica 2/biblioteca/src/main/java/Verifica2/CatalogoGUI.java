@@ -3,16 +3,10 @@ package Verifica2;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
-import java.util.ArrayList;
 
 public class CatalogoGUI extends JFrame{
-    private Catalogo catalogo;
-    private JList<String> listaElementi;
-    private String isbn;
-    private int annoPubblicazione;
-    private int numeroPagine;
-    private String autore;
-    private String genere;
+    private final Catalogo catalogo;
+    private final JList<String> listaElementi;
 
     public CatalogoGUI(){
         this.catalogo = new Catalogo();
@@ -42,20 +36,20 @@ public class CatalogoGUI extends JFrame{
 
         // metodi funzionamento bottoni carica e salva su disco <3
 
-        btnSalva.addActionListener(e -> {
+        btnSalva.addActionListener(_ -> {
             String nomeFile = JOptionPane.showInputDialog("Inserisci il nome del file in cui salvare il catalogo");
             catalogo.salvaSuDisco(nomeFile);
             aggiornaListaElementi(); // Aggiorna la lista dopo aver salvato il catalogo
         });
 
-        btnCarica.addActionListener(e -> {
+        btnCarica.addActionListener(_ -> {
             String nomeFile = JOptionPane.showInputDialog("Inserisci il nome del file da cui caricare il catalogo");
             catalogo.caricaDaDisco(nomeFile);
             aggiornaListaElementi(); // Aggiorna la lista dopo aver caricato il catalogo da disco
         });
 
         // Aggiunta dei listener ai bottoni che congestion il funzionamento della GUI
-        btnAggiungi.addActionListener(e -> {
+        btnAggiungi.addActionListener(_ -> {
             // Mostra un dialogo di input per scegliere il tipo di elemento
             Object[] possibilities = {"Libro", "Rivista"};
             String tipo = (String)JOptionPane.showInputDialog(
@@ -89,13 +83,13 @@ public class CatalogoGUI extends JFrame{
             aggiornaListaElementi();
         });
 
-        btnRimuovi.addActionListener(e -> {
+        btnRimuovi.addActionListener(_ -> {
             String isbn = JOptionPane.showInputDialog("Inserisci l'ISBN dell'elemento da rimuovere");
             catalogo.rimuoviElemento(isbn);
             aggiornaListaElementi();
         });
 
-        btnRicerca.addActionListener(e -> {
+        btnRicerca.addActionListener(_ -> {
             String titolo = JOptionPane.showInputDialog("Inserisci il titolo dell'elemento da cercare");
             Elemento elemento = catalogo.cercaPerTitolo(titolo);
             // Mostra l'elemento trovato all'utente
@@ -123,8 +117,6 @@ public class CatalogoGUI extends JFrame{
 
     // Punto di avvio <3
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new CatalogoGUI().setVisible(true);
-        });
+        SwingUtilities.invokeLater(() -> new CatalogoGUI().setVisible(true));
     }
 }

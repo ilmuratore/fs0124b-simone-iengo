@@ -1,2 +1,93 @@
-"Libro","prova libro","123456789","2020","150","simone","java"
-"Rivista","prova rivista","987654321","2010","271","settimanale"
+"Libro",Orgoglio e pregiudizio,9781234567890,1813,279,Jane Austen,Romanzo
+"Libro",Il grande Gatsby,9780987654321,1925,180,F. Scott Fitzgerald,Romanzo
+"Libro",1984,9780123456789,1949,328,George Orwell,Romanzo distopico
+"Libro",Il signore degli anelli,9789876543210,1954,1216,J.R.R. Tolkien,Fantasy
+"Libro",Il vecchio e il mare,9789012345678,1952,127,Ernest Hemingway,Romanzo breve
+"Libro",Cime tempestose,9788765432109,1847,348,Emily Brontë,Romanzo gotico
+"Libro",Piccole donne,9787890123456,1868,449,Louisa May Alcott,Romanzo per ragazze
+"Libro",Moby Dick,9787654321098,1851,704,Herman Melville,Romanzo avventura
+"Libro",Le avventure di Alice nel Paese delle Meraviglie,9786789012345,1865,192,Lewis Carroll,Fantasy
+"Libro",Don Chisciotte,9786543210987,1605,992,Miguel de Cervantes,Romance cavalleresco
+"Libro",Guerra e pace,9785678901234,1869,1392,Lev Tolstoj,Romanzo storico
+"Libro",Anna Karenina,9785432109876,1877,864,Lev Tolstoj,Romanzo psicologico
+"Libro",Il Conte di Montecristo,9784567890123,1844,1276,Alexandre Dumas,Romanzo storico d'avventura
+"Libro",Lo straniero,9784321098765,1942,123,Albert Camus,Romanzo filosofico
+"Libro",La Metamorfosi,9783456789012,1915,83,Franz Kafka,Romanzo breve
+"Libro",La fattoria degli animali,9783210987654,1945,112,George Orwell,Allegoria politica
+"Libro",Le cronache di Narnia,9782345678901,1950,752,C.S. Lewis,Fantasy
+"Libro",Il gattopardo,9782109876543,1958,399,Giuseppe Tomasi di Lampedusa,Romanzo storico
+"Libro",Cent'anni di solitudine,9781234567890,1967,417,Gabriel García Márquez,Romanzo magico realista
+"Libro",Il processo,9780987654321,1925,275,Franz Kafka,Romanzo filosofico
+"Libro",Il nome della rosa,9780123456789,1980,536,Umberto Eco,Romanzo storico giallo
+"Libro",Il giovane Holden,9789876543210,1951,281,J.D. Salinger,Romanzo psicologico
+"Libro",Canto di Natale,9789012345678,1843,104,Charles Dickens,Romanzo breve
+"Libro",La regina delle nevi,9788765432109,1844,96,Hans Christian Andersen,Favola
+"Libro",Il maestro e Margherita,9787890123456,1967,395,Mikhail Bulgakov,Romanzo filosofico
+"Libro",Il ritratto di Dorian Gray,9787654321098,1890,254,Oscar Wilde,Romanzo gotico
+"Libro",Il vecchio che leggeva romanzi d'amore,9786789012345,1989,139,Luis Sepúlveda,Romanzo avventura
+"Libro",Il mondo nuovo,9786543210987,1932,268,Aldous Huxley,Romanzo distopico
+"Libro",Il vecchio che pescava sogni,9785678901234,1992,157,Luís Fernando Veríssimo,Romanzo realista
+"Libro",La storia infinita,9785432109876,1979,396,Michael Ende,Fantasy
+"Libro",Il piccolo principe,9784567890123,1943,96,Antoine de Saint-Exupéry,Allegoria filosofica
+"Libro",Il deserto dei tartari,9784321098765,1940,355,Dino Buzzati,Romanzo d'avventura
+"Libro",Il colore viola,9783456789012,1982,288,Alice Walker,Romanzo epistolare
+"Libro",Il barone rampante,9783210987654,1957,318,Italo Calvino,Romanzo filosofico
+"Libro",Il mondo di Sofia,9782345678901,1991,575,Jostein Gaarder,Romanzo filosofico
+"Libro",Il giorno della civetta,9782109876543,1961,210,Leonardo Sciascia,Giallo
+"Libro",Il piccolo bruco Maisazio,9781234567890,1969,32,Eric Carle,Libro per bambini
+"Libro",Il labirinto delle ossa,9780987654321,2001,411,James Rollins,Thriller
+"Libro",Il diario di Anna Frank,9780123456789,1947,283,Anna Frank,Romanzo autobiografico
+"Libro",Il libro della giungla,9789876543210,1894,169,Rudyard Kipling,Romanzo per ragazzi
+"Libro",Il dottor Jekyll e Mr. Hyde,9789012345678,1886,124,Robert Louis Stevenson,Romanzo gotico
+"Libro",Il segno dei quattro,9788765432109,1890,130,Arthur Conan Doyle,Giallo
+"Libro",Il volo del calabrone,9787890123456,1899,240,Nikolai Rimsky-Korsakov,Romanzo musicale
+"Libro",Il vecchio che andava in giro per il mondo in bicicletta,9787654321098,2013,319,Erik Durschmied,Biografia avventurosa
+"Libro",Il ritorno di Sherlock Holmes,9786789012345,1905,316,Arthur Conan Doyle,Giallo
+"Libro",Il vecchio e il cane che guarisce,9786543210987,2008,160,Allen Anderson e Linda Anderson,Romanzo per animali
+"Libro",Il codice da Vinci,9785678901234,2003,689,Dan Brown,Romanzo giallo
+"Libro",Il ragazzo che gridava al lupo mannaro,9785432109876,1999,237,Heather Brewer,Fantasy per ragazzi
+"Libro",Il ritratto di una signora,9784567890123,1881,558,Henry James,Romanzo psicologico
+"Libro",Il signore delle mosche,9784321098765,1954,248,William Golding,Romanzo allegorico
+"Libro",Il gabbiano Jonathan Livingston,9783456789012,1970,94,Richard Bach,Romanzo filosofico
+"Libro",Il cerchio delle fate,9783210987654,1994,437,Margaret Atwood,Fantasy
+"Rivista",Scienza e Vita,987654321,2010,271,Settimanale
+"Rivista",Il Mondo,987654322,2011,280,Mensile
+"Rivista",National Geographic,987654323,2012,300,Settimanale
+"Rivista",Vanity Fair,987654324,2013,250,Mensile
+"Rivista",Wired,987654325,2014,320,Trimestrale
+"Rivista",Time,987654326,2015,280,Semestrale
+"Rivista",The New Yorker,987654327,2016,290,Settimanale
+"Rivista",The Economist,987654328,2017,280,Mensile
+"Rivista",Harvard Business Review,987654329,2018,300,Trimestrale
+"Rivista",BBC Focus,987654330,2019,270,Semestrale
+"Rivista",New Scientist,987654331,2020,280,Settimanale
+"Rivista",The Atlantic,987654332,2021,290,Mensile
+"Rivista",Smithsonian,987654333,2022,260,Trimestrale
+"Rivista",Scientific American,987654334,2023,300,Semestrale
+"Rivista",Forbes,987654335,2024,290,Settimanale
+"Rivista",The Guardian Weekly,987654336,2025,310,Mensile
+"Rivista",MIT Technology Review,987654337,2026,280,Trimestrale
+"Rivista",Discover,987654338,2027,290,Semestrale
+"Rivista",Reader's Digest,987654339,2028,300,Settimanale
+"Rivista",Fortune,987654340,2029,310,Mensile
+"Rivista",The New Republic,987654341,2030,280,Trimestrale
+"Rivista",Le Scienze,987654342,2031,290,Semestrale
+"Rivista",Elle,987654343,2032,310,Settimanale
+"Rivista",Esquire,987654344,2033,320,Mensile
+"Rivista",The Times Literary Supplement,987654345,2034,290,Trimestrale
+"Rivista",New York Magazine,987654346,2035,300,Semestrale
+"Rivista",The Spectator,987654347,2036,320,Settimanale
+"Rivista",Harpers,987654348,2037,330,Mensile
+"Rivista",Nature,987654349,2038,300,Trimestrale
+"Rivista",Bloomberg Businessweek,987654350,2039,310,Semestrale
+"Rivista",The Week,987654351,2040,330,Settimanale
+"Rivista",Smithsonian Magazine,987654352,2041,340,Mensile
+"Rivista",WIRED UK,987654353,2042,310,Trimestrale
+"Rivista",Fortune,987654354,2043,320,Semestrale
+"Rivista",The Economist,987654355,2044,340,Settimanale
+"Rivista",TIME Magazine,987654356,2045,350,Mensile
+"Rivista",The New Yorker,987654357,2046,320,Trimestrale
+"Rivista",National Geographic,987654358,2047,330,Semestrale
+"Rivista",The Guardian Weekly,987654359,2048,350,Settimanale
+"Rivista",Vanity Fair,987654360,2049,360,Mensile
+"Rivista",Scientific American,987654361,2050,330,Trimestrale

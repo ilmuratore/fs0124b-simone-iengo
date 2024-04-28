@@ -19,7 +19,11 @@ public abstract class Elemento {
     }
 
     public String getTitolo() {
-        return this.titolo;
+        if (this.titolo != null) {
+            return this.titolo;
+        } else {
+            return "Elemento non disponibile";
+        }
     }
 
     public int getAnnoPubblicazione() {

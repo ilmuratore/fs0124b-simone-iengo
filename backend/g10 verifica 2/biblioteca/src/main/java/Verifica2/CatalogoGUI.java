@@ -48,9 +48,9 @@ public class CatalogoGUI extends JFrame{
             aggiornaListaElementi(); // Aggiorna la lista dopo aver caricato il catalogo da disco
         });
 
-        // Aggiunta dei listener ai bottoni che congestion il funzionamento della GUI
+        // Aggiunta dei listener ai bottoni con gestione il funzionamento della GUI
         btnAggiungi.addActionListener(_ -> {
-            // Mostra un dialogo di input per scegliere il tipo di elemento
+            // Mostra un dialogo di input per scegliere il tipo di elemento se libro o rivista
             Object[] possibilities = {"Libro", "Rivista"};
             String tipo = (String)JOptionPane.showInputDialog(
                     null,
@@ -66,15 +66,14 @@ public class CatalogoGUI extends JFrame{
             String isbn = JOptionPane.showInputDialog("Inserisci l'ISBN dell'elemento");
             int annoPubblicazione = Integer.parseInt(JOptionPane.showInputDialog("Inserisci l'anno di pubblicazione dell'elemento"));
             int numeroPagine = Integer.parseInt(JOptionPane.showInputDialog("Inserisci il numero di pagine dell'elemento"));
-
             Elemento elemento;
-            if (tipo.equals("Libro")) {
-                // Mostra un dialogo di input per ogni attributo libro
+            if (tipo.equals("Libro")) { // Libro
+                // Mostra un dialogo di input per ogni attributo libro specifico
                 String autore = JOptionPane.showInputDialog("Inserisci l'autore del libro");
                 String genere = JOptionPane.showInputDialog("Inserisci il genere del libro");
                 elemento = new Libro(titolo, isbn, annoPubblicazione, numeroPagine, autore, genere);
             } else { // Rivista
-                // Mostra un dialogo di input per ogni attributo rivista
+                // Mostra un dialogo di input per ogni attributo rivista specifico
                 String periodicita = JOptionPane.showInputDialog("Inserisci la periodicità della rivista");
                 elemento = new Rivista(titolo, isbn, annoPubblicazione, numeroPagine, periodicita);
             }

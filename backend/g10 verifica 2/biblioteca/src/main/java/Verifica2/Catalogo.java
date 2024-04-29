@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class Catalogo {
-    private List<Elemento> elementi;
+    private final List<Elemento> elementi;
 
     public Catalogo(){
         this.elementi = new ArrayList<>();
@@ -38,9 +38,9 @@ public class Catalogo {
                 .orElse(null);
     }
 
-    // altri metodi di ricerca
 
 
+    // metodi che salvano e caricano da disco i file CSV "database" , il formato e' nomefile.estensione scelta, altrimenti l'apertura non funziona
     public void salvaSuDisco(String nomeFile) {
         try (CSVWriter writer = new CSVWriter(new FileWriter(nomeFile))) {
             for (Elemento elemento : this.elementi) {
@@ -50,7 +50,7 @@ public class Catalogo {
                 } else if (elemento instanceof Rivista rivista) {
                     riga = new String[]{"Rivista", rivista.getTitolo(), rivista.getIsbn(), String.valueOf(rivista.getAnnoPubblicazione()), String.valueOf(rivista.getNumeroPagine()), rivista.getPeriodicita()};
                 } else {
-                    continue; // Ignora gli elementi di tipo sconosciuto
+                    continue;
                 }
                 writer.writeNext(riga);
             }

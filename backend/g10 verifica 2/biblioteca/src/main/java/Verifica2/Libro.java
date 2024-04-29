@@ -1,8 +1,8 @@
 package Verifica2;
 
 public class Libro extends Elemento {
-    private String autore;
-    private String genere;
+    private final String autore;
+    private final String genere;
 
     public Libro(String titolo, String isbn, int annoPubblicazione, int numeroPagine, String autore, String genere) {
         super(titolo, isbn, annoPubblicazione, numeroPagine);

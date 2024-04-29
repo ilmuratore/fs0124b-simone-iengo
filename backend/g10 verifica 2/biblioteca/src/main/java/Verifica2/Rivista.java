@@ -1,7 +1,7 @@
 package Verifica2;
 
 public class Rivista extends Elemento {
-    private String periodicita;
+    private final String periodicita;
 
 
     public Rivista(String titolo, String isbn, int annoPubblicazione, int numeroPagine, String periodicita) {

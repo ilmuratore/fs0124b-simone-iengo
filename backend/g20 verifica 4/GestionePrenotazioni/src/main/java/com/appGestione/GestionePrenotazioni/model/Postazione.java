@@ -4,6 +4,7 @@ package com.appGestione.GestionePrenotazioni.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.util.List;
 
 
@@ -16,7 +17,7 @@ public class Postazione {
 
     private String codice;
     private String descrizione;
-    private String tipo;
+    private TipoPostazione tipo;
     private int maxOccupanti;
 
     @ManyToOne
@@ -24,5 +25,6 @@ public class Postazione {
 
     @OneToMany(mappedBy = "postazione")
     private List<Prenotazione> prenotazioni;
+
 }
 

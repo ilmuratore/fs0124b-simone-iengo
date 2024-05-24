@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 @Service
 public class FileUploadService {
@@ -19,7 +20,7 @@ public class FileUploadService {
             if (!Files.exists(root)) {
                 Files.createDirectory(root);
             }
-            Path resolve = root.resolve(file.getOriginalFilename());
+            Path resolve = root.resolve(Objects.requireNonNull(Objects.requireNonNull(file.getOriginalFilename())));
             file.transferTo(resolve);
         } catch (IOException e) {
             throw new CustomException("Could not store the file. Error: " + e.getMessage());

@@ -1,7 +1,7 @@
-package service;
+package com.Applicazione.GestioneEventi.service;
 
-import model.Evento;
-import repository.EventoRepository;
+import com.Applicazione.GestioneEventi.model.Evento;
+import com.Applicazione.GestioneEventi.repository.EventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

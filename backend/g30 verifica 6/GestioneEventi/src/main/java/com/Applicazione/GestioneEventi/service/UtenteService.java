@@ -1,7 +1,7 @@
-package service;
+package com.Applicazione.GestioneEventi.service;
 
-import model.Utente;
-import repository.UtenteRepository;
+import com.Applicazione.GestioneEventi.model.Utente;
+import com.Applicazione.GestioneEventi.repository.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

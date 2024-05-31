@@ -1,12 +1,12 @@
 package com.Applicazione.GestioneEventi;
 
-import model.Utente;
+import com.Applicazione.GestioneEventi.model.Utente;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import repository.UtenteRepository;
-import service.UtenteService;
+import com.Applicazione.GestioneEventi.repository.UtenteRepository;
+import com.Applicazione.GestioneEventi.service.UtenteService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;

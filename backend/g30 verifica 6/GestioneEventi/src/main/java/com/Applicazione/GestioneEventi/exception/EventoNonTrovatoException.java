@@ -1,4 +1,4 @@
-package exception;
+package com.Applicazione.GestioneEventi.exception;
 
 public class EventoNonTrovatoException extends RuntimeException {
 

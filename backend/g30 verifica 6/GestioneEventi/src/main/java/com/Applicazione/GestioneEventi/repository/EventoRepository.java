@@ -1,6 +1,6 @@
-package repository;
+package com.Applicazione.GestioneEventi.repository;
 
-import model.Evento;
+import com.Applicazione.GestioneEventi.model.Evento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

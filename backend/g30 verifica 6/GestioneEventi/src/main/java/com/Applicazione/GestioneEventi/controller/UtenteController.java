@@ -1,7 +1,7 @@
-package controller;
+package com.Applicazione.GestioneEventi.controller;
 
-import model.Utente;
-import service.UtenteService;
+import com.Applicazione.GestioneEventi.model.Utente;
+import com.Applicazione.GestioneEventi.service.UtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

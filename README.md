@@ -1,1 +1,1 @@
-My first work with coding. 
+This repository contains all my work completed during the six months of the Epicode bootcamp, where I learned my first programming languages, frameworks, and worked on my first graphic design projects.

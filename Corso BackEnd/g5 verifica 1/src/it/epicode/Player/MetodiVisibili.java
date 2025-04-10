@@ -1,16 +1,12 @@
 package it.epicode.Player;
 
 public interface MetodiVisibili {
-
-
-
     void alzaLuminosita();
-    void abbasaLuminosita();
-
-
+    void abbassaLuminosita();
+}
 
     /*
-    interfaccia creata perche piu classi
-    condivido questi metodi
+    interfaccia creata perché piu classi
+    condividono questi metodi
      */
-}
+

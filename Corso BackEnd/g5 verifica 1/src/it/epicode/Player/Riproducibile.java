@@ -1,10 +1,8 @@
 package it.epicode.Player;
-//in questa caso ho implettao l'interfaccia per le classi ripreducibili (per dargli i metodi ) ed esteso la Media.
-public abstract class Riproducibile extends Media implements MetodiRiproducibili{
 
-    private int durata ;
+public abstract class Riproducibile extends Media implements MetodiRiproducibili {
+    private int durata;
     private int volume = 5;
-
 
     public int getDurata() {
         return durata;
@@ -18,47 +16,23 @@ public abstract class Riproducibile extends Media implements MetodiRiproducibili
         return volume;
     }
 
-
-    /* in questo metodo si:
-    *  1) controlla che il volume non sia al max,nel cosa scriverà volemi al massimo
-    *
-    * 2) aumeta il volume di 1 alla volta
-    *
-    *
-    * */
-
+    /* Aumenta il volume di 1 unità, se non è già al massimo (100) */
     @Override
     public void aumentaVol() {
-        if(volume<100){
+        if(volume < 100) {
             volume++;
-        }else{
+        } else {
             System.out.println("volume al max");
         }
     }
 
-    /* in questo metodo si:
-     *  1) controlla che il volume non sia al max,nel cosa scriverà volemi al minimo
-     *
-     * 2) diminuisce il volume di 1 alla volta
-     *
-     *
-     * */
-
+    /* Diminuisce il volume di 1 unità, se non è già al minimo (0) */
     @Override
     public void riduciVol() {
-        if(volume > 0){
+        if(volume > 0) {
             volume--;
-        }else{
+        } else {
             System.out.println("volume al min");
         }
     }
-
-
 }
-
-/*
-    Questa è la classe madre  di tutte
-    le classe riproducibili.
-
-     Quindi estendo solo qua l'interfaccia della dei metodi riproducibili.
- */

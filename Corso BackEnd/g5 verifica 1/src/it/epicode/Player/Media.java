@@ -1,7 +1,6 @@
 package it.epicode.Player;
 
-public abstract class Media  {
-
+public abstract class Media {
     private String titolo;
 
     public String getTitolo() {
@@ -13,8 +12,7 @@ public abstract class Media  {
     }
 }
 
-
 /*
-    Classe piu alta di tutte ha solo le generalita che tutte le classi devono avere,
+    Classe piu alta di tutte ha solo le generalità che tutte le classi devono avere,
     appunto e una classe astratta.
  */

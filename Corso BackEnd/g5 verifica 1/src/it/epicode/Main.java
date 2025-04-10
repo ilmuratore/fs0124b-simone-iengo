@@ -8,18 +8,21 @@ public class Main {
     //Test generali di funzionamento di tutte le classi e i vari metodi.
     public static void main(String[] args)
     {
-        Video primo  = new Video("primo",5);
-        Audio primoaudio  = new Audio("primoaudio",5);
-        Immagine primoimmagine  = new Immagine("img");
+        Video primo  = new Video("primo",30);
+        Audio primoaudio  = new Audio("primo-audio",15);
+        Immagine primoimmagine  = new Immagine("img.jpeg");
 
         primo.aumentaVol();
         primo.alzaLuminosita();
-        primoimmagine.abbasaLuminosita();
+        primoimmagine.abbassaLuminosita();
 
 
 
+        System.out.println("Esecuzione Audio:");
         primoaudio.play();
+        System.out.println("\nEsecuzione Video:");
         primo.play();
+        System.out.println("\nVisualizzazione Immagine:");
         primoimmagine.show();
 
 
